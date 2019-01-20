@@ -1,0 +1,14 @@
+<Config>
+	<Feature id="US_6524" title="Allocation Screen">
+	    <TC id="TC_6524_7452" Description="To Validate the availability of 'Allocation' screen via Client 360 screen"
+			XML_Location="US_6524\TC_6524_7452.xml" Iteration="1">
+		</TC>
+		<TC id="TC_6524_7453" Description="To Validate the availability of fields available on header of Allocation screen(via client 360 screen)"
+			XML_Location="US_6524\TC_6524_7453.xml" Iteration="1">
+		</TC>
+		
+		<TC id="TC_6524_7457" Description="To Validate the availability of grid columns available on Allocation screen(via client 360 screen)"
+			XML_Location="US_6524\TC_6524_7457.xml" Iteration="1">
+		</TC>
+	</Feature>
+</Config>

@@ -1,0 +1,9 @@
+<Config>
+	<Feature id="GuestHouse_DataCaptureForm" title="View Risk Information">
+		<TC id="positiveWorkFlow"
+			Description="Verify whether 'View' button is displayed in summary of cover page"
+			XML_Location="GuestHouse_DataCaptureForm\GuestHouse_DataCaptureForm_positiveWorkFlow.xml"
+			Iteration="1">
+		</TC>
+	</Feature>
+</Config>
