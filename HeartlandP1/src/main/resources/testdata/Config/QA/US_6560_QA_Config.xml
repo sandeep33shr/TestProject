@@ -1,0 +1,11 @@
+<Config>
+	<Feature id="US_6560" title="Collection Menu">
+	    <TC id="TC_6560_6822" Description="To Validate that SRP is posted to client and bank account through Collection Details process"
+			XML_Location="US_6560\TC_6560_6822.xml" Iteration="1">
+		</TC>
+		<TC id="TC_6560_6842" Description="To Validate that SRP is posted to client account on CTV screen"
+			XML_Location="US_6560\TC_6560_6842.xml" Iteration="1">
+		</TC>
+		
+	</Feature>
+</Config>
