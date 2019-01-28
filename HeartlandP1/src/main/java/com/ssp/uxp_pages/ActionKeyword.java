@@ -492,44 +492,41 @@ public class ActionKeyword {
 	}
 
 	public static void SumOfGrid(String fieldLabel, String pathType, String path, WebDriver driver) throws Exception {
-		
-			boolean status = false;
-			By locator;
-			
-			String[] paths = path.split(",");
-			locator = ActionKeyword.locatorValue(pathType, path);
-			List<WebElement> pages = driver.findElements(locator);
+		By locator1, locator2;
+		String[] paths = path.split(",");
+		locator1 = ActionKeyword.locatorValue(pathType, paths[0]);
 
-			Double sum = 0.00;
-			for (int i = 0; i < pages.size(); i++) {
-				locator = ActionKeyword.locatorValue(pathType, path);
-				List<WebElement> rows = driver.findElements(locator);
+		List<WebElement> pages = driver.findElements(locator1);
 
-				for (WebElement e : rows) {
+		BigDecimal sum = new BigDecimal(0.00);
+		for (int i = 0; i < pages.size(); i++) {
+			locator2 = ActionKeyword.locatorValue(pathType, paths[1]);
+			List<WebElement> rows = driver.findElements(locator2);
 
-					String result = e.getText().replaceAll(",", "");
+			for (WebElement e : rows) {
 
-					Double result1 = Double.parseDouble(result);
-					DecimalFormat df = new DecimalFormat(".##");
-					String result2 = df.format(result1);
-					Double val = Double.parseDouble(result2);
-					sum = (sum + val);
-					// BigDecimal bd = new BigDecimal(sum);
+				String result = e.getText().replaceAll(",", "");
 
-					System.out.println(BigDecimal.valueOf(sum).toPlainString());
-				}
-				locator = ActionKeyword.locatorValue(pathType, path);
-				pages = driver.findElements(locator);
-				
-				pages.get(i).click();
-			}	
+				Double result1 = Double.parseDouble(result);
+				DecimalFormat df = new DecimalFormat(".##");
+				String result2 = df.format(result1);
+				Double val = Double.parseDouble(result2);
+				BigDecimal value = new BigDecimal(val);
+				sum = sum.add(value);
+			}
+			locator1 = ActionKeyword.locatorValue(pathType, path);
+			pages = driver.findElements(locator1);
+
+			pages.get(i).click();
+		}
+		dynamicHashMap.put(fieldLabel, String.valueOf(sum));
 
 	}
 
 	public static void getDynamicHashMapDisabledField(String fieldLabel, String pathType, String path, WebDriver driver,
 			ExtentTest extentedReport, boolean screenshot) throws Exception {
 		try {
-			
+
 			String temp = null;
 			By locator;
 			locator = ActionKeyword.locatorValue(pathType, path);
