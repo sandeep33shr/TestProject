@@ -474,16 +474,16 @@ public class ActionKeyword {
 			getReceiptRefDynamicHashMap(fieldLabel, pathType, path, driver, extentedReport, screenshot);
 			break;
 		case "assertAllocationScreenName":
-			assertAllocationScreenName(fieldLabel, pathType, path, validMessage, errorMessage,driver, extentedReport, screenshot);
+			assertAllocationScreenName(fieldLabel, pathType, path, validMessage, errorMessage, driver, extentedReport,
+					screenshot);
 			break;
 		case "getDynamicHashMapDisabledField":
 			getDynamicHashMapDisabledField(fieldLabel, pathType, path, driver, extentedReport, screenshot);
 			break;
 		case "assertSumOfGrid":
-			assertSumOfGrid((fieldLabel1,pathType1, path1, fieldLabel2, pathType2, path2, fieldLabel3, pathType3, path3, validMessage, errorMessage,driver,
-					extentedReport,screenshot);
+			SumOfGrid(fieldLabel, pathType, path, driver);
 			break;
-			
+
 		default:
 			Log.message("Unable to identify UIoperation type on respective field: " + fieldLabel, driver,
 					extentedReport, screenshot);
@@ -491,23 +491,19 @@ public class ActionKeyword {
 		}
 	}
 
-	public static void assertSumOfGrid(String fieldLabel1, String pathType1, String path1, String fieldLabel2,
-			String pathType2, String path2, String fieldLabel3, String pathType3, String path3, String input,
-			String validMessage, String errorMessage, WebDriver driver, ExtentTest extentedReport, boolean screenshot)
-			throws Exception {
-		try {
+	public static void SumOfGrid(String fieldLabel, String pathType, String path, WebDriver driver) throws Exception {
+		
 			boolean status = false;
-			By locator1;
-			By locator2;
-			By locator3;
-
-			locator1 = ActionKeyword.locatorValue(pathType1, path1);
-			List<WebElement> pages = driver.findElements(locator1);
+			By locator;
+			
+			String[] paths = path.split(",");
+			locator = ActionKeyword.locatorValue(pathType, path);
+			List<WebElement> pages = driver.findElements(locator);
 
 			Double sum = 0.00;
 			for (int i = 0; i < pages.size(); i++) {
-				locator2 = ActionKeyword.locatorValue(pathType2, path2);
-				List<WebElement> rows = driver.findElements(locator2);
+				locator = ActionKeyword.locatorValue(pathType, path);
+				List<WebElement> rows = driver.findElements(locator);
 
 				for (WebElement e : rows) {
 
@@ -522,30 +518,18 @@ public class ActionKeyword {
 
 					System.out.println(BigDecimal.valueOf(sum).toPlainString());
 				}
-				locator1 = ActionKeyword.locatorValue(pathType1, path1);
-				pages = driver.findElements(locator1);
+				locator = ActionKeyword.locatorValue(pathType, path);
+				pages = driver.findElements(locator);
+				
 				pages.get(i).click();
-			}
-
-			locator3 = ActionKeyword.locatorValue(pathType3, path3);
-			WebElement element = driver.findElement(locator3);
-			String temp = element.getText().replaceAll(",", "");
-			if (sum.equals(temp)) {
-				status = true;
-			}
-			Log.softAssertThat(status, validMessage, "Fail to achieve expected result : " + errorMessage, driver,
-					extentedReport, screenshot);
-
-		} catch (NoSuchElementException e) {
-			Log.fail("Fail to achieve expected result : " + errorMessage, driver, extentedReport, true);
-			throw new Exception("No Element Found to assert" + e);
-		}
+			}	
 
 	}
 
 	public static void getDynamicHashMapDisabledField(String fieldLabel, String pathType, String path, WebDriver driver,
 			ExtentTest extentedReport, boolean screenshot) throws Exception {
 		try {
+			
 			String temp = null;
 			By locator;
 			locator = ActionKeyword.locatorValue(pathType, path);
