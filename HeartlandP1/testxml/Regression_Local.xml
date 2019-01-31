@@ -15,14 +15,14 @@
 	<parameter name="env" value="QA"></parameter>
 	<parameter name="mode" value="Broker"></parameter>
 	<parameter name="webSite"
-		value="http://vm-hland-qa02/Pure.Portal/Login.aspx"></parameter>
+		value="http://vm-hland-qa01/Pure.Portal/Login.aspx"></parameter>
 	<test name="MMVP-Login" parallel="methods" thread-count="1">
 		<classes>
-			<class name="com.ssp.regression.insurer.testscripts.US_3044">
+			<class name="com.ssp.regression.insurer.testscripts.US_7156">
 				<methods>
-				  <!--  <include name ="TC_3044_7729"/>   
-				   <include name ="TC_3044_7730_01"/>
-				   <include name ="TC_3044_7730_02"/> -->
+			
+				<include name ="TC_7156_7792"/>
+				    <!--   <include name ="TC_7156_7778_04"/>  -->
 		         	
 				</methods>
 			</class>

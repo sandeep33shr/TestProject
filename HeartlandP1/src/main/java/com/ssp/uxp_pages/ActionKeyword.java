@@ -1,6 +1,7 @@
 package com.ssp.uxp_pages;
 
 import java.math.BigDecimal;
+import java.math.MathContext;
 import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
@@ -480,9 +481,33 @@ public class ActionKeyword {
 		case "getDynamicHashMapDisabledField":
 			getDynamicHashMapDisabledField(fieldLabel, pathType, path, driver, extentedReport, screenshot);
 			break;
-		case "assertSumOfGrid":
-			SumOfGrid(fieldLabel, pathType, path, driver);
+		case "getDynamicHashMapDisabledAmountField":
+			getDynamicHashMapDisabledAmountField(fieldLabel, pathType, path, driver, extentedReport, screenshot);
 			break;
+		case "SumOfGridDynamicHash":
+			SumOfGridDynamicHash(fieldLabel, pathType, path, driver);
+			break;
+		case "assertAmountRemoveComma":
+			assertAmountRemoveComma(fieldLabel, pathType, path, input, validMessage, errorMessage, driver,
+					extentedReport, screenshot);
+			break;
+		case "SumOfGridTotalMarkedDynamicHash":
+			SumOfGridTotalMarkedDynamicHash(fieldLabel, pathType, path, driver);
+			break;
+		case "closingBalanceAmountDynamicHashMap":
+			closingBalanceAmountDynamicHashMap(fieldLabel, pathType, path, input, driver, screenshot);
+			break;
+		case "unreconciledBalanceAmountDynamicHashMapBeforeReconciled":
+			unreconciledBalanceAmountDynamicHashMapBeforeReconciled(fieldLabel, pathType, path, input, driver,
+					screenshot);
+			break;
+		case "OpeningBalanceAmountDynamicHashMapBeforeReconciled":
+			OpeningBalanceAmountDynamicHashMapBeforeReconciled(fieldLabel, pathType, path, input, driver, screenshot);
+			break;
+		/*case "assertValueInGrid":
+			assertValueInGrid(fieldLabel, pathType, path, input, validMessage, errorMessage, driver, extentedReport,
+					screenshot);
+			break;*/
 
 		default:
 			Log.message("Unable to identify UIoperation type on respective field: " + fieldLabel, driver,
@@ -491,36 +516,201 @@ public class ActionKeyword {
 		}
 	}
 
-	public static void SumOfGrid(String fieldLabel, String pathType, String path, WebDriver driver) throws Exception {
+	/*private static void assertValueInGrid(String fieldLabel, String pathType, String path, String input,
+			String validMessage, String errorMessage, WebDriver driver, ExtentTest extentedReport,
+			Boolean screenshot) throws Exception {
+		try {
+		  boolean status = false;
+			
+			String[] nameToVerify = input.split(",");
+			int i=-1;
+			By pagesLocator, TransactionRowsLocator;
+			
+			
+			String[] paths = path.split(",");
+			
+			pagesLocator = ActionKeyword.locatorValue(pathType, paths[0]);
+			List<WebElement> pages;
+			TransactionRowsLocator = ActionKeyword.locatorValue(pathType, paths[1]);
+			List<WebElement> transactionRows = driver.findElements(TransactionRowsLocator);
+			
+			
+				transactionRows = driver.findElements(TransactionRowsLocator);
+				pages = driver.findElements(pagesLocator);
+				do {
+					i++;
+					
+					transactionRows = driver.findElements(TransactionRowsLocator);
+					if (transactionRows.get(i).getText().equalsIgnoreCase(nameToVerify[i]))
+				    {
+
+					status= true;
+				}
+				pages = driver.findElements(pagesLocator);
+				if (i != pages.size())
+					pages.get(i).click();
+				}while (i < pages.size());
+				
+			} catch (NoSuchElementException e) {
+				Log.fail("Fail to achieve expected result : " + errorMessage, driver, extentedReport, true);
+				throw new Exception("No Element Found to assert" + e);
+			}
+		
+			
+			       	
+	}
+*/
+	private static void OpeningBalanceAmountDynamicHashMapBeforeReconciled(String fieldLabel, String pathType,
+			String path, String input, WebDriver driver, Boolean screenshot) {
+		boolean status = false;
 		By locator1, locator2;
 		String[] paths = path.split(",");
 		locator1 = ActionKeyword.locatorValue(pathType, paths[0]);
+		WebElement element1 = driver.findElement(locator1);
+		String openingBal = element1.getAttribute("value").replaceAll(",", "").trim();
+		System.out.println(openingBal);
+		Double openingBalVal = Double.valueOf(openingBal);
+		locator2 = ActionKeyword.locatorValue(pathType, paths[1]);
+		WebElement element2 = driver.findElement(locator2);
+		String totleMarked = element2.getAttribute("value").replaceAll(",", "");
+		Double totleMarkedVal = Double.valueOf(totleMarked);
+		Double afterReconciled = openingBalVal + totleMarkedVal;
+		DecimalFormat df = new DecimalFormat("#.##");
+		String afterReconciledVal = df.format(afterReconciled);
+		System.out.println(afterReconciledVal);
+		dynamicHashMap.put(fieldLabel, afterReconciledVal);
 
-		List<WebElement> pages = driver.findElements(locator1);
+	}
 
-		BigDecimal sum = new BigDecimal(0.00);
-		for (int i = 0; i < pages.size(); i++) {
-			locator2 = ActionKeyword.locatorValue(pathType, paths[1]);
-			List<WebElement> rows = driver.findElements(locator2);
+	private static void unreconciledBalanceAmountDynamicHashMapBeforeReconciled(String fieldLabel, String pathType,
+			String path, String input, WebDriver driver, Boolean screenshot) {
+		boolean status = false;
+		By locator1, locator2;
+		String[] paths = path.split(",");
+		locator1 = ActionKeyword.locatorValue(pathType, paths[0]);
+		WebElement element1 = driver.findElement(locator1);
+		String beforeReconciled = element1.getAttribute("value").replaceAll(",", "").trim();
+		System.out.println(beforeReconciled);
 
-			for (WebElement e : rows) {
+		Double beforeReconciledVal = Double.valueOf(beforeReconciled);
+		locator2 = ActionKeyword.locatorValue(pathType, paths[1]);
+		WebElement element2 = driver.findElement(locator2);
+		String totleMarked = element2.getAttribute("value").replaceAll(",", "");
+		Double totleMarkedVal = Double.valueOf(totleMarked);
+		Double afterReconciled = beforeReconciledVal - totleMarkedVal;
+		DecimalFormat df = new DecimalFormat("#.##");
 
-				String result = e.getText().replaceAll(",", "");
+		String afterReconciledVal = df.format(afterReconciled);
 
-				Double result1 = Double.parseDouble(result);
-				DecimalFormat df = new DecimalFormat(".##");
-				String result2 = df.format(result1);
-				Double val = Double.parseDouble(result2);
-				BigDecimal value = new BigDecimal(val);
-				sum = sum.add(value);
-			}
-			locator1 = ActionKeyword.locatorValue(pathType, path);
-			pages = driver.findElements(locator1);
+		System.out.println(afterReconciledVal);
+		dynamicHashMap.put(fieldLabel, afterReconciledVal);
 
-			pages.get(i).click();
+	}
+
+	private static void closingBalanceAmountDynamicHashMap(String fieldLabel, String pathType, String path,
+			String input, WebDriver driver, Boolean screenshot) throws Exception {
+
+		boolean status = false;
+		By locator1, locator2;
+		String[] paths = path.split(",");
+		locator1 = ActionKeyword.locatorValue(pathType, paths[0]);
+		WebElement element1 = driver.findElement(locator1);
+		String markedTotal = element1.getAttribute("value").replaceAll(",", "").trim();
+		System.out.println(markedTotal);
+		Double markedVal = Double.valueOf(markedTotal);
+		locator2 = ActionKeyword.locatorValue(pathType, paths[1]);
+		WebElement element2 = driver.findElement(locator2);
+		String openingTotal = element2.getAttribute("value").replaceAll(",", "");
+		Double openingBal = Double.valueOf(openingTotal);
+		Double closingTotal = markedVal + openingBal;
+		String closingVal = Double.toString(closingTotal);
+		System.out.println(closingVal);
+		dynamicHashMap.put(fieldLabel, closingVal);
+
+	}
+
+	private static void assertAmountRemoveComma(String fieldLabel, String pathType, String path, String input,
+			String validMessage, String errorMessage, WebDriver driver, ExtentTest extentedReport, Boolean screenshot)
+			throws Exception {
+		try {
+			boolean status = false;
+			By locator;
+			locator = ActionKeyword.locatorValue(pathType, path);
+			WebElement element = driver.findElement(locator);
+			String amount = element.getAttribute("value").replaceAll(",", "");
+			if (amount.equals(input)) {
+				status = true;
+			} else
+				System.out.print("Actual->" + element.getText() + "Expected-->" + input);
+			Log.softAssertThat(status, validMessage, "Fail to achieve expected result : " + errorMessage, driver,
+					extentedReport, screenshot);
+		} catch (NoSuchElementException e) {
+			Log.fail("Fail to achieve expected result : " + errorMessage, driver, extentedReport, true);
+			throw new Exception("No Element Found to assert" + e);
 		}
-		dynamicHashMap.put(fieldLabel, String.valueOf(sum));
 
+	}
+
+	public static void SumOfGridDynamicHash(String fieldLabel, String pathType, String path, WebDriver driver)
+			throws Exception {
+		By pagesLocator, amountRowsLocator;
+		String[] paths = path.split(",");
+		pagesLocator = ActionKeyword.locatorValue(pathType, paths[0]);
+		List<WebElement> pages;
+		BigDecimal sum = new BigDecimal(0.00);
+		amountRowsLocator = ActionKeyword.locatorValue(pathType, paths[1]);
+		List<WebElement> amountRows = driver.findElements(amountRowsLocator);
+		if (amountRows.isEmpty())
+			dynamicHashMap.put(fieldLabel, "");
+		else {
+			int i = -1;
+			do {
+				i++;
+				amountRows = driver.findElements(amountRowsLocator);
+				for (WebElement amountRowWebElement : amountRows) {
+					Double result = Double.parseDouble(amountRowWebElement.getText().replaceAll(",", ""));
+					BigDecimal value = new BigDecimal(result);
+					sum = sum.add(value);
+					System.out.println(sum);
+				}
+				pages = driver.findElements(pagesLocator);
+				if (i != pages.size())
+					pages.get(i).click();
+			} while (i < pages.size());
+			sum = sum.setScale(2, BigDecimal.ROUND_HALF_EVEN);
+			dynamicHashMap.put(fieldLabel, String.valueOf(sum));
+		}
+	}
+
+	public static void SumOfGridTotalMarkedDynamicHash(String fieldLabel, String pathType, String path,
+			WebDriver driver) throws Exception {
+		By pagesLocator, amountRowsLocator;
+		String[] paths = path.split(",");
+		pagesLocator = ActionKeyword.locatorValue(pathType, paths[0]);
+		List<WebElement> pages;
+		BigDecimal sum = new BigDecimal(0.00);
+		amountRowsLocator = ActionKeyword.locatorValue(pathType, paths[1]);
+		List<WebElement> amountRows = driver.findElements(amountRowsLocator);
+		if (amountRows.isEmpty())
+			dynamicHashMap.put(fieldLabel, "0.00");
+		else {
+			int i = -1;
+			do {
+				i++;
+				amountRows = driver.findElements(amountRowsLocator);
+				for (WebElement amountRowWebElement : amountRows) {
+					Double result = Double.parseDouble(amountRowWebElement.getText().replaceAll(",", ""));
+					BigDecimal value = new BigDecimal(result);
+					sum = sum.add(value);
+					System.out.println(sum);
+				}
+				pages = driver.findElements(pagesLocator);
+				if (i != pages.size())
+					pages.get(i).click();
+			} while (i < pages.size());
+			sum = sum.setScale(2, BigDecimal.ROUND_HALF_EVEN);
+			dynamicHashMap.put(fieldLabel, String.valueOf(sum));
+		}
 	}
 
 	public static void getDynamicHashMapDisabledField(String fieldLabel, String pathType, String path, WebDriver driver,
@@ -535,6 +725,24 @@ public class ActionKeyword {
 					screenshot);
 			temp = element.getAttribute("value");
 			dynamicHashMap.put(fieldLabel, temp);
+		} catch (NoSuchElementException e) {
+			Log.fail("Fail to achieve expected result ", driver, extentedReport, true);
+			throw new Exception("No Element Found to assert" + e);
+		}
+	}
+
+	public static void getDynamicHashMapDisabledAmountField(String fieldLabel, String pathType, String path,
+			WebDriver driver, ExtentTest extentedReport, boolean screenshot) throws Exception {
+		try {
+
+			String temp = null;
+			By locator;
+			locator = ActionKeyword.locatorValue(pathType, path);
+			WebElement element = driver.findElement(locator);
+			Log.message("Value Displayed for " + fieldLabel + " : " + element.getText(), driver, extentedReport,
+					screenshot);
+			temp = element.getAttribute("value");
+			dynamicHashMap.put(fieldLabel, temp.replaceAll(",", ""));
 		} catch (NoSuchElementException e) {
 			Log.fail("Fail to achieve expected result ", driver, extentedReport, true);
 			throw new Exception("No Element Found to assert" + e);

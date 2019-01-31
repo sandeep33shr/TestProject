@@ -2201,7 +2201,7 @@
 		<Field id="lnkTransactions"
 			path="#ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl00_rptItem_ctl00_A1">
 		</Field>
-        <Field id="lnkReconciliation"
+		<Field id="lnkReconciliation"
 			path="#ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl02_rptItem_ctl00_A1">
 		</Field>
 
@@ -2240,6 +2240,9 @@
 		</Field>
 		<Field id="fldAccountBalance"
 			path="#ctl00_cntMainBody_txtAccountBalance">
+		</Field>
+		<Field id="drpUser"
+			path="#ctl00_cntMainBody_lblOperatorName">
 		</Field>
 		<Field id="transactionsRows"
 			path="#ctl00_cntMainBody_gvGetTransactiondetails tr">
@@ -2300,6 +2303,13 @@
 		<Field id="ViewInActionMenuInSeachTransactionsTable"
 			path="a#ctl00_cntMainBody_gvGetTransactiondetails_ctl02_lnkbtnView">
 		</Field>
+		<Field id="tabTransaction"
+			path="a[href='#tab-Document']">
+		</Field>
+		<Field id="lblAll"
+			path="div#ctl00_cntMainBody_PnlDocumentCol label[id]:not([id$='_lblCalenderIcon'])">
+		</Field>
+		
 	</Screen>
 
 	<Screen id="CollectionDetails" title="SSP - Pure Insurance">
@@ -2429,11 +2439,70 @@
 		</Field>
 		<Field id="allColumnsExceptSelectAllCheckboxColumn" path="th a">
 		</Field>
-		<Field id="chkSelectAll" path="#ctl00_cntMainBody_grdDetails_ctl01_chkSelectAll">
+		<Field id="chkSelectAll"
+			path="#ctl00_cntMainBody_grdDetails_ctl01_chkSelectAll">
 		</Field>
 		<Field id="btnAll" path="a[id*='ctl00_cntMainBody_btn']">
 		</Field>
-		<Field id="btnReport" path="#ctl00_cntMainBody_grdDetails_ctl01_chkSelectAll">
+		<Field id="btnReport"
+			path="#ctl00_cntMainBody_grdDetails_ctl01_chkSelectAll">
+		</Field>
+		<Field id="btnOK"
+			path="#ctl00_cntMainBody_btnOk">
+		</Field>
+		<Field id="btnReconciled"
+			path="#ctl00_cntMainBody_btnReconcile">
+		</Field>
+		<Field id="chkThirdRecordInGrid"
+			path="#ctl00_cntMainBody_grdDetails_ctl03_chkMarked">
+		</Field>
+		<Field id="chkFourthRecordInGrid"
+			path="#ctl00_cntMainBody_grdDetails_ctl04_chkMarked">
+		</Field>
+		<Field id="transactionRef3rdRow"
+			path="#ctl00_cntMainBody_grdDetails tr:nth-child(2) td:nth-child(6)">
+		</Field>
+		<Field id="transactionRef4thRow"
+			path="#ctl00_cntMainBody_grdDetails tr:nth-child(3) td:nth-child(6)">
+		</Field>
+		<Field id="commonPathPagesAndAmount"
+			path=".AspNet-GridView-Pagination.AspNet-GridView-Bottom.grid-pgr>a,#ctl00_cntMainBody_grdDetails td:nth-child(5)">
+		</Field>
+		<Field id="closingBalanceCalculationPaths"
+			path="#ctl00_cntMainBody_txtTotalMarked,#ctl00_cntMainBody_txtOpeningBalance">
+		</Field>
+		<Field id="lnkFinance"
+			path="#ctl00_RibbonMenu_rptCategory_ctl04_RptCategorySpanText">
+		</Field>
+		<Field id="lnkTransactions"
+			path="#ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl00_rptItem_ctl00_A1">
+		</Field>
+		<Field id="lnkReconciliation"
+			path="#ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl02_rptItem_ctl00_A1">
+		</Field>
+         <Field id="beforeReconciledCalculationUnreconciled"
+			path="#ctl00_cntMainBody_txtUnreconciled,#ctl00_cntMainBody_txtTotalMarked">
+		</Field>
+		<Field id="beforeReconciledCalculationOpeningBalance"
+			path="#ctl00_cntMainBody_txtOpeningBalance,#ctl00_cntMainBody_txtTotalMarked">
+		</Field>
+		<Field id="columnTransactionRef"
+			path=".AspNet-GridView td:nth-child(6)">
+		</Field>
+		<Field id="commonPathPagesAndTransacionRef"
+			path=".AspNet-GridView-Pagination.AspNet-GridView-Bottom.grid-pgr>a,.AspNet-GridView td:nth-child(6)">
+		</Field>
+		<Field id="actionMenu"
+			path="a[title='Action Menu']">
+		</Field>
+		<Field id="lnkView"
+			path="#ctl00_cntMainBody_grdDetails_ctl02_liView a">
+		</Field>
+		<Field id="iframeIn" path="TB_iframeContent">
+		</Field>
+		<Field id="tabDetails" path="a[href='#tabdetails']">
+		</Field>
+		<Field id="fldReconciliationDateOnCTV" path="#ctl00_cntMainBody_lblReconciledDate">
 		</Field>
 	</Screen>
 </Selenium>

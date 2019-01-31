@@ -1,431 +1,118 @@
-16-Jan-2019 12:34:56:975 INFO  [PoolService-0]  
-16-Jan-2019 12:34:56:982 INFO  [PoolService-0] ****             TC_3044_7729 [MMVP-Login]             ***** 
-16-Jan-2019 12:34:56:982 INFO  [PoolService-0]  
-16-Jan-2019 12:35:21:641 INFO  [PoolService-0]  
-16-Jan-2019 12:35:21:643 INFO  [PoolService-0] ****             To Validate the availability of 'Bank Reconciliation'task under FInance>Bank<small><b><i>[chrome_windows]</b></i></small>             ***** 
-16-Jan-2019 12:35:21:644 INFO  [PoolService-0]  
-16-Jan-2019 12:35:21:646 INFO  [PoolService-0] <--------------------- Iteration 0 is started -----------------------> 
-16-Jan-2019 12:35:21:862 DEBUG [PoolService-0] Page URL:: https://vm-hland-qa02/purests/account/signin?returnurl=%2fpurests%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttp%253a%252f%252fvm-hland-qa02%252fpure.portal%252flogin.aspx%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252fpure.portal%25252flogin.aspx%26wct%3d2019-01-16t07%253a05%253a09z&wa=wsignin1.0&wtrealm=http%3a%2f%2fvm-hland-qa02%2fpure.portal%2flogin.aspx&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fpure.portal%252flogin.aspx&wct=2019-01-16t07%3a05%3a09z 
-16-Jan-2019 12:35:21:864 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:35:21:979 DEBUG [PoolService-0] Page URL:: https://vm-hland-qa02/purests/account/signin?returnurl=%2fpurests%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttp%253a%252f%252fvm-hland-qa02%252fpure.portal%252flogin.aspx%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252fpure.portal%25252flogin.aspx%26wct%3d2019-01-16t07%253a05%253a09z&wa=wsignin1.0&wtrealm=http%3a%2f%2fvm-hland-qa02%2fpure.portal%2flogin.aspx&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fpure.portal%252flogin.aspx&wct=2019-01-16t07%3a05%3a09z 
-16-Jan-2019 12:35:21:980 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:35:23:190 INFO  [PoolService-0] Navigated to Login page 
-16-Jan-2019 12:35:23:190 INFO  [PoolService-0] Value of LoginScreen_Username_fieldLabel: ------->Username 
-16-Jan-2019 12:35:23:196 INFO  [PoolService-0] Value of LoginScreen_Username_id: ------->fldUserName 
-16-Jan-2019 12:35:23:197 INFO  [PoolService-0] Value of LoginScreen_Username_inputType: ------->alphanumeric 
-16-Jan-2019 12:35:23:197 INFO  [PoolService-0] Value of LoginScreen_Username_length: ------->10 
-16-Jan-2019 12:35:23:197 INFO  [PoolService-0] Value of LoginScreen_Username_pathType: ------->css 
-16-Jan-2019 12:35:23:197 INFO  [PoolService-0] Value of LoginScreen_Username_screenShot: ------->false 
-16-Jan-2019 12:35:23:197 INFO  [PoolService-0] Value of LoginScreen_Username_type: ------->textfield 
-16-Jan-2019 12:35:23:357 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: input[id='UserName']] 
-16-Jan-2019 12:35:23:543 INFO  [PoolService-0] Entered text inside Username : sirius 
-16-Jan-2019 12:35:23:545 INFO  [PoolService-0] Value of LoginScreen_Password_fieldLabel: ------->Password 
-16-Jan-2019 12:35:23:546 INFO  [PoolService-0] Value of LoginScreen_Password_id: ------->fldPassword 
-16-Jan-2019 12:35:23:547 INFO  [PoolService-0] Value of LoginScreen_Password_inputType: ------->alphanumeric 
-16-Jan-2019 12:35:23:548 INFO  [PoolService-0] Value of LoginScreen_Password_length: ------->10 
-16-Jan-2019 12:35:23:549 INFO  [PoolService-0] Value of LoginScreen_Password_pathType: ------->css 
-16-Jan-2019 12:35:23:550 INFO  [PoolService-0] Value of LoginScreen_Password_screenShot: ------->true 
-16-Jan-2019 12:35:23:551 INFO  [PoolService-0] Value of LoginScreen_Password_type: ------->textfield 
-16-Jan-2019 12:35:23:683 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: input#usrpwd] 
-16-Jan-2019 12:35:24:365 INFO  [PoolService-0] Entered text inside Password : sirius 
-16-Jan-2019 12:35:24:366 INFO  [PoolService-0] Value of LoginScreen_SignIn_fieldLabel: ------->SignIn 
-16-Jan-2019 12:35:24:366 INFO  [PoolService-0] Value of LoginScreen_SignIn_id: ------->btnSignIn 
-16-Jan-2019 12:35:24:367 INFO  [PoolService-0] Value of LoginScreen_SignIn_pathType: ------->css 
-16-Jan-2019 12:35:24:367 INFO  [PoolService-0] Value of LoginScreen_SignIn_screenShot: ------->false 
-16-Jan-2019 12:35:24:368 INFO  [PoolService-0] Value of LoginScreen_SignIn_type: ------->buttonJS 
-16-Jan-2019 12:35:24:472 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: [value='Sign In']] 
-16-Jan-2019 12:35:42:472 INFO  [PoolService-0] Click button is performed for SignIn 
-16-Jan-2019 12:35:42:711 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/findclient.aspx 
-16-Jan-2019 12:35:42:711 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:35:42:931 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/findclient.aspx 
-16-Jan-2019 12:35:42:931 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:35:42:951 INFO  [PoolService-0] Successfully navigated to Client/Policy Search Page 
-16-Jan-2019 12:35:42:951 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_fieldLabel: ------->Finance Ribbon Menu 
-16-Jan-2019 12:35:42:951 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_id: ------->lnkFinance 
-16-Jan-2019 12:35:42:951 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_pathType: ------->css 
-16-Jan-2019 12:35:42:951 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_screenShot: ------->false 
-16-Jan-2019 12:35:42:951 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_type: ------->Button 
-16-Jan-2019 12:35:43:081 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_RptCategorySpanText] 
-16-Jan-2019 12:35:45:141 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:35:47:342 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:35:47:342 INFO  [PoolService-0] Clicked on button Finance Ribbon Menu 
-16-Jan-2019 12:35:47:347 INFO  [PoolService-0] Value of Home_Reconciliation Link avilability_errorMessage: ------->Reconciliation link is not present under Finance menu 
-16-Jan-2019 12:35:47:348 INFO  [PoolService-0] Value of Home_Reconciliation Link avilability_fieldLabel: ------->Reconciliation Link avilability 
-16-Jan-2019 12:35:47:348 INFO  [PoolService-0] Value of Home_Reconciliation Link avilability_id: ------->lnkReconciliation 
-16-Jan-2019 12:35:47:348 INFO  [PoolService-0] Value of Home_Reconciliation Link avilability_pathType: ------->css 
-16-Jan-2019 12:35:47:348 INFO  [PoolService-0] Value of Home_Reconciliation Link avilability_screenShot: ------->true 
-16-Jan-2019 12:35:47:348 INFO  [PoolService-0] Value of Home_Reconciliation Link avilability_type: ------->assertGetText 
-16-Jan-2019 12:35:47:348 INFO  [PoolService-0] Value of Home_Reconciliation Link avilability_validMessage: ------->Reconciliation link present in ribbon memu 
-16-Jan-2019 12:35:47:498 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl02_rptItem_ctl00_A1] 
-16-Jan-2019 12:35:49:790 INFO  [PoolService-0] Reconciliation link present in ribbon memu 
-16-Jan-2019 12:35:49:790 INFO  [PoolService-0] <--------------------- Iteration 0 is ended -----------------------> 
-16-Jan-2019 12:35:49:797 INFO  [PoolService-0] Test Passed. 
-16-Jan-2019 12:35:49:797 INFO  [PoolService-0] ****             -E---N---D-             ***** 
-16-Jan-2019 12:35:49:808 INFO  [PoolService-0]  
-16-Jan-2019 12:35:49:808 INFO  [PoolService-0] ****             TC_3044_7730_01 [MMVP-Login]             ***** 
-16-Jan-2019 12:35:49:808 INFO  [PoolService-0]  
-16-Jan-2019 12:35:49:808 INFO  [PoolService-0]  
-16-Jan-2019 12:35:49:808 INFO  [PoolService-0] ****             To Validate the filter options and fields available on 'Bank Reconciliation'screen header<small><b><i>[chrome_windows]</b></i></small>             ***** 
-16-Jan-2019 12:35:49:808 INFO  [PoolService-0]  
-16-Jan-2019 12:35:49:808 INFO  [PoolService-0] <--------------------- Iteration 0 is started -----------------------> 
-16-Jan-2019 12:35:49:918 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/findclient.aspx# 
-16-Jan-2019 12:35:49:918 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:35:50:038 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/findclient.aspx# 
-16-Jan-2019 12:35:50:038 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:35:50:048 INFO  [PoolService-0] Successfully navigated to Client/Policy Search Page 
-16-Jan-2019 12:35:50:048 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_fieldLabel: ------->Finance Ribbon Menu 
-16-Jan-2019 12:35:50:048 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_id: ------->lnkFinance 
-16-Jan-2019 12:35:50:058 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_pathType: ------->css 
-16-Jan-2019 12:35:50:058 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_screenShot: ------->false 
-16-Jan-2019 12:35:50:058 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_type: ------->Button 
-16-Jan-2019 12:35:50:168 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_RptCategorySpanText] 
-16-Jan-2019 12:35:52:220 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:35:54:383 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:35:54:383 INFO  [PoolService-0] Clicked on button Finance Ribbon Menu 
-16-Jan-2019 12:35:54:393 INFO  [PoolService-0] Value of Home_Click Reconciliation Link_fieldLabel: ------->Click Reconciliation Link 
-16-Jan-2019 12:35:54:394 INFO  [PoolService-0] Value of Home_Click Reconciliation Link_id: ------->lnkReconciliation 
-16-Jan-2019 12:35:54:394 INFO  [PoolService-0] Value of Home_Click Reconciliation Link_pathType: ------->css 
-16-Jan-2019 12:35:54:394 INFO  [PoolService-0] Value of Home_Click Reconciliation Link_screenShot: ------->false 
-16-Jan-2019 12:35:54:394 INFO  [PoolService-0] Value of Home_Click Reconciliation Link_type: ------->Button 
-16-Jan-2019 12:35:54:534 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl02_rptItem_ctl00_A1] 
-16-Jan-2019 12:35:56:590 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:01:697 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:01:697 INFO  [PoolService-0] Clicked on button Click Reconciliation Link 
-16-Jan-2019 12:36:01:834 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:36:01:834 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:01:917 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:36:01:918 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:01:941 INFO  [PoolService-0] Successfully navigated to BankReconciliation Page 
-16-Jan-2019 12:36:01:941 INFO  [PoolService-0] Value of BankReconciliation_Bank Reconciliation Screen Fields_errorMessage: ------->All fields are not available on Bank reconciliation screen 
-16-Jan-2019 12:36:01:942 INFO  [PoolService-0] Value of BankReconciliation_Bank Reconciliation Screen Fields_fieldLabel: ------->Bank Reconciliation Screen Fields 
-16-Jan-2019 12:36:01:942 INFO  [PoolService-0] Value of BankReconciliation_Bank Reconciliation Screen Fields_id: ------->allFieldsReconciliation 
-16-Jan-2019 12:36:01:942 INFO  [PoolService-0] Value of BankReconciliation_Bank Reconciliation Screen Fields_pathType: ------->css 
-16-Jan-2019 12:36:01:942 INFO  [PoolService-0] Value of BankReconciliation_Bank Reconciliation Screen Fields_screenShot: ------->false 
-16-Jan-2019 12:36:01:943 INFO  [PoolService-0] Value of BankReconciliation_Bank Reconciliation Screen Fields_type: ------->assertOrderedListTextEquals 
-16-Jan-2019 12:36:01:943 INFO  [PoolService-0] Value of BankReconciliation_Bank Reconciliation Screen Fields_validMessage: ------->All fields are available on Bank reconciliation screen 
-16-Jan-2019 12:36:02:037 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:02:144 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:02:308 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:02:522 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:02:725 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:02:947 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:03:167 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:03:377 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (a4facbaaffbd7006af07535ea50c89ee)] -> css selector: label[id^='ctl00_cntMainBody_lbl']] 
-16-Jan-2019 12:36:03:477 INFO  [PoolService-0] All fields are available on Bank reconciliation screen 
-16-Jan-2019 12:36:03:477 INFO  [PoolService-0] <--------------------- Iteration 0 is ended -----------------------> 
-16-Jan-2019 12:36:03:477 INFO  [PoolService-0] Test Passed. 
-16-Jan-2019 12:36:03:477 INFO  [PoolService-0] ****             -E---N---D-             ***** 
-16-Jan-2019 12:36:03:496 INFO  [PoolService-0]  
-16-Jan-2019 12:36:03:496 INFO  [PoolService-0] ****             TC_3044_7730_02 [MMVP-Login]             ***** 
-16-Jan-2019 12:36:03:496 INFO  [PoolService-0]  
-16-Jan-2019 12:36:03:496 INFO  [PoolService-0]  
-16-Jan-2019 12:36:03:496 INFO  [PoolService-0] ****             To Validate the Unreconciled,Total Marked,Closing Balance fields and Show Marked Items checkbox are disabled<small><b><i>[chrome_windows]</b></i></small>             ***** 
-16-Jan-2019 12:36:03:496 INFO  [PoolService-0]  
-16-Jan-2019 12:36:03:496 INFO  [PoolService-0] <--------------------- Iteration 0 is started -----------------------> 
-16-Jan-2019 12:36:03:686 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:36:03:696 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:03:907 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:36:03:916 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:03:957 INFO  [PoolService-0] Successfully navigated to BankReconciliation Page 
-16-Jan-2019 12:36:03:957 INFO  [PoolService-0] Value of BankReconciliation_Check Unreconciled field is disabled_errorMessage: ------->Unreconciled field is not disabled 
-16-Jan-2019 12:36:03:957 INFO  [PoolService-0] Value of BankReconciliation_Check Unreconciled field is disabled_fieldLabel: ------->Check Unreconciled field is disabled 
-16-Jan-2019 12:36:03:967 INFO  [PoolService-0] Value of BankReconciliation_Check Unreconciled field is disabled_id: ------->fldUnreconciled 
-16-Jan-2019 12:36:03:967 INFO  [PoolService-0] Value of BankReconciliation_Check Unreconciled field is disabled_pathType: ------->css 
-16-Jan-2019 12:36:03:967 INFO  [PoolService-0] Value of BankReconciliation_Check Unreconciled field is disabled_screenShot: ------->false 
-16-Jan-2019 12:36:03:967 INFO  [PoolService-0] Value of BankReconciliation_Check Unreconciled field is disabled_type: ------->assertEnabledNegative 
-16-Jan-2019 12:36:03:967 INFO  [PoolService-0] Value of BankReconciliation_Check Unreconciled field is disabled_validMessage: ------->Unreconciled field is disabled 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Unreconciled field is disabled 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Value of BankReconciliation_Check Total Marked field is disabled_errorMessage: ------->Total Marked field is not disabled 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Value of BankReconciliation_Check Total Marked field is disabled_fieldLabel: ------->Check Total Marked field is disabled 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Value of BankReconciliation_Check Total Marked field is disabled_id: ------->fldTotalMarked 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Value of BankReconciliation_Check Total Marked field is disabled_pathType: ------->css 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Value of BankReconciliation_Check Total Marked field is disabled_screenShot: ------->false 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Value of BankReconciliation_Check Total Marked field is disabled_type: ------->assertEnabledNegative 
-16-Jan-2019 12:36:04:057 INFO  [PoolService-0] Value of BankReconciliation_Check Total Marked field is disabled_validMessage: ------->Total Marked field is disabled 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Total Marked field is disabled 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Value of BankReconciliation_Check Closing Balance field is disabled_errorMessage: ------->Closing Balance field is not disabled 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Value of BankReconciliation_Check Closing Balance field is disabled_fieldLabel: ------->Check Closing Balance field is disabled 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Value of BankReconciliation_Check Closing Balance field is disabled_id: ------->fldClosingBalance 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Value of BankReconciliation_Check Closing Balance field is disabled_pathType: ------->css 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Value of BankReconciliation_Check Closing Balance field is disabled_screenShot: ------->false 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Value of BankReconciliation_Check Closing Balance field is disabled_type: ------->assertEnabledNegative 
-16-Jan-2019 12:36:04:107 INFO  [PoolService-0] Value of BankReconciliation_Check Closing Balance field is disabled_validMessage: ------->Closing Balance field is disabled 
-16-Jan-2019 12:36:04:161 INFO  [PoolService-0] Closing Balance field is disabled 
-16-Jan-2019 12:36:04:162 INFO  [PoolService-0] Value of BankReconciliation_Check Opening Balance field is disabled_errorMessage: ------->Opening Balance field is not disabled 
-16-Jan-2019 12:36:04:163 INFO  [PoolService-0] Value of BankReconciliation_Check Opening Balance field is disabled_fieldLabel: ------->Check Opening Balance field is disabled 
-16-Jan-2019 12:36:04:163 INFO  [PoolService-0] Value of BankReconciliation_Check Opening Balance field is disabled_id: ------->fldOpeningBalance 
-16-Jan-2019 12:36:04:163 INFO  [PoolService-0] Value of BankReconciliation_Check Opening Balance field is disabled_pathType: ------->css 
-16-Jan-2019 12:36:04:163 INFO  [PoolService-0] Value of BankReconciliation_Check Opening Balance field is disabled_screenShot: ------->false 
-16-Jan-2019 12:36:04:163 INFO  [PoolService-0] Value of BankReconciliation_Check Opening Balance field is disabled_type: ------->assertEnabledNegative 
-16-Jan-2019 12:36:04:164 INFO  [PoolService-0] Value of BankReconciliation_Check Opening Balance field is disabled_validMessage: ------->Opening Balance field is disabled 
-16-Jan-2019 12:36:04:206 INFO  [PoolService-0] Opening Balance field is disabled 
-16-Jan-2019 12:36:04:206 INFO  [PoolService-0] Value of BankReconciliation_Check Show Marked Items checkbox is disabled_errorMessage: ------->Show Marked Items checkbox is not disabled 
-16-Jan-2019 12:36:04:206 INFO  [PoolService-0] Value of BankReconciliation_Check Show Marked Items checkbox is disabled_fieldLabel: ------->Check Show Marked Items checkbox is disabled 
-16-Jan-2019 12:36:04:206 INFO  [PoolService-0] Value of BankReconciliation_Check Show Marked Items checkbox is disabled_id: ------->chkShowMarkedItems 
-16-Jan-2019 12:36:04:207 INFO  [PoolService-0] Value of BankReconciliation_Check Show Marked Items checkbox is disabled_pathType: ------->css 
-16-Jan-2019 12:36:04:207 INFO  [PoolService-0] Value of BankReconciliation_Check Show Marked Items checkbox is disabled_screenShot: ------->false 
-16-Jan-2019 12:36:04:207 INFO  [PoolService-0] Value of BankReconciliation_Check Show Marked Items checkbox is disabled_type: ------->assertEnabledNegative 
-16-Jan-2019 12:36:04:207 INFO  [PoolService-0] Value of BankReconciliation_Check Show Marked Items checkbox is disabled_validMessage: ------->Show Marked Items checkbox is disabled 
-16-Jan-2019 12:36:04:254 INFO  [PoolService-0] Show Marked Items checkbox is disabled 
-16-Jan-2019 12:36:04:254 INFO  [PoolService-0] <--------------------- Iteration 0 is ended -----------------------> 
-16-Jan-2019 12:36:04:323 INFO  [PoolService-0] Test Passed. 
-16-Jan-2019 12:36:04:325 INFO  [PoolService-0] ****             -E---N---D-             ***** 
-16-Jan-2019 12:36:08:791 INFO  [PoolService-0]  
-16-Jan-2019 12:36:08:792 INFO  [PoolService-0] ****             TC_3044_7731 [MMVP-Login]             ***** 
-16-Jan-2019 12:36:08:792 INFO  [PoolService-0]  
-16-Jan-2019 12:36:17:648 INFO  [PoolService-0]  
-16-Jan-2019 12:36:17:649 INFO  [PoolService-0] ****             To Validate the columns available on bank reconciliation screen<small><b><i>[chrome_windows]</b></i></small>             ***** 
-16-Jan-2019 12:36:17:649 INFO  [PoolService-0]  
-16-Jan-2019 12:36:17:650 INFO  [PoolService-0] <--------------------- Iteration 0 is started -----------------------> 
-16-Jan-2019 12:36:17:753 DEBUG [PoolService-0] Page URL:: https://vm-hland-qa02/purests/account/signin?returnurl=%2fpurests%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttp%253a%252f%252fvm-hland-qa02%252fpure.portal%252flogin.aspx%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252fpure.portal%25252flogin.aspx%26wct%3d2019-01-16t07%253a06%253a09z&wa=wsignin1.0&wtrealm=http%3a%2f%2fvm-hland-qa02%2fpure.portal%2flogin.aspx&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fpure.portal%252flogin.aspx&wct=2019-01-16t07%3a06%3a09z 
-16-Jan-2019 12:36:17:753 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:17:835 DEBUG [PoolService-0] Page URL:: https://vm-hland-qa02/purests/account/signin?returnurl=%2fpurests%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttp%253a%252f%252fvm-hland-qa02%252fpure.portal%252flogin.aspx%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252fpure.portal%25252flogin.aspx%26wct%3d2019-01-16t07%253a06%253a09z&wa=wsignin1.0&wtrealm=http%3a%2f%2fvm-hland-qa02%2fpure.portal%2flogin.aspx&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fpure.portal%252flogin.aspx&wct=2019-01-16t07%3a06%3a09z 
-16-Jan-2019 12:36:17:835 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:18:381 INFO  [PoolService-0] Navigated to Login page 
-16-Jan-2019 12:36:18:382 INFO  [PoolService-0] Value of LoginScreen_Username_fieldLabel: ------->Username 
-16-Jan-2019 12:36:18:382 INFO  [PoolService-0] Value of LoginScreen_Username_id: ------->fldUserName 
-16-Jan-2019 12:36:18:382 INFO  [PoolService-0] Value of LoginScreen_Username_inputType: ------->alphanumeric 
-16-Jan-2019 12:36:18:382 INFO  [PoolService-0] Value of LoginScreen_Username_length: ------->10 
-16-Jan-2019 12:36:18:383 INFO  [PoolService-0] Value of LoginScreen_Username_pathType: ------->css 
-16-Jan-2019 12:36:18:383 INFO  [PoolService-0] Value of LoginScreen_Username_screenShot: ------->false 
-16-Jan-2019 12:36:18:383 INFO  [PoolService-0] Value of LoginScreen_Username_type: ------->textfield 
-16-Jan-2019 12:36:18:493 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: input[id='UserName']] 
-16-Jan-2019 12:36:18:623 INFO  [PoolService-0] Entered text inside Username : sirius 
-16-Jan-2019 12:36:18:623 INFO  [PoolService-0] Value of LoginScreen_Password_fieldLabel: ------->Password 
-16-Jan-2019 12:36:18:624 INFO  [PoolService-0] Value of LoginScreen_Password_id: ------->fldPassword 
-16-Jan-2019 12:36:18:624 INFO  [PoolService-0] Value of LoginScreen_Password_inputType: ------->alphanumeric 
-16-Jan-2019 12:36:18:624 INFO  [PoolService-0] Value of LoginScreen_Password_length: ------->10 
-16-Jan-2019 12:36:18:624 INFO  [PoolService-0] Value of LoginScreen_Password_pathType: ------->css 
-16-Jan-2019 12:36:18:625 INFO  [PoolService-0] Value of LoginScreen_Password_screenShot: ------->true 
-16-Jan-2019 12:36:18:625 INFO  [PoolService-0] Value of LoginScreen_Password_type: ------->textfield 
-16-Jan-2019 12:36:18:721 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: input#usrpwd] 
-16-Jan-2019 12:36:19:324 INFO  [PoolService-0] Entered text inside Password : sirius 
-16-Jan-2019 12:36:19:324 INFO  [PoolService-0] Value of LoginScreen_SignIn_fieldLabel: ------->SignIn 
-16-Jan-2019 12:36:19:324 INFO  [PoolService-0] Value of LoginScreen_SignIn_id: ------->btnSignIn 
-16-Jan-2019 12:36:19:325 INFO  [PoolService-0] Value of LoginScreen_SignIn_pathType: ------->css 
-16-Jan-2019 12:36:19:325 INFO  [PoolService-0] Value of LoginScreen_SignIn_screenShot: ------->false 
-16-Jan-2019 12:36:19:325 INFO  [PoolService-0] Value of LoginScreen_SignIn_type: ------->buttonJS 
-16-Jan-2019 12:36:19:416 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: [value='Sign In']] 
-16-Jan-2019 12:36:27:247 INFO  [PoolService-0] Click button is performed for SignIn 
-16-Jan-2019 12:36:27:349 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/findclient.aspx 
-16-Jan-2019 12:36:27:350 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:27:433 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/findclient.aspx 
-16-Jan-2019 12:36:27:433 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:28:518 INFO  [PoolService-0] Navigated to search page 
-16-Jan-2019 12:36:28:518 INFO  [PoolService-0] Value of FindClient_Client Code_fieldLabel: ------->Client Code 
-16-Jan-2019 12:36:28:524 INFO  [PoolService-0] Value of FindClient_Client Code_id: ------->fldClientCode 
-16-Jan-2019 12:36:28:524 INFO  [PoolService-0] Value of FindClient_Client Code_pathType: ------->css 
-16-Jan-2019 12:36:28:524 INFO  [PoolService-0] Value of FindClient_Client Code_screenShot: ------->false 
-16-Jan-2019 12:36:28:524 INFO  [PoolService-0] Value of FindClient_Client Code_type: ------->textfield 
-16-Jan-2019 12:36:28:635 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_txtClientCode] 
-16-Jan-2019 12:36:28:964 INFO  [PoolService-0] Entered text inside Client Code : ssptest 
-16-Jan-2019 12:36:28:965 INFO  [PoolService-0] Value of FindClient_Find Button_fieldLabel: ------->Find Button 
-16-Jan-2019 12:36:28:966 INFO  [PoolService-0] Value of FindClient_Find Button_id: ------->btnFind 
-16-Jan-2019 12:36:28:966 INFO  [PoolService-0] Value of FindClient_Find Button_pathType: ------->css 
-16-Jan-2019 12:36:28:967 INFO  [PoolService-0] Value of FindClient_Find Button_screenShot: ------->false 
-16-Jan-2019 12:36:28:967 INFO  [PoolService-0] Value of FindClient_Find Button_type: ------->Button 
-16-Jan-2019 12:36:29:112 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: a#ctl00_cntMainBody_btnSearch] 
-16-Jan-2019 12:36:31:169 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:35:807 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:35:807 INFO  [PoolService-0] Clicked on button Find Button 
-16-Jan-2019 12:36:35:810 INFO  [PoolService-0] Value of FindClient_Select Button_fieldLabel: ------->Select Button 
-16-Jan-2019 12:36:35:811 INFO  [PoolService-0] Value of FindClient_Select Button_id: ------->btnselectClientInSearch 
-16-Jan-2019 12:36:35:811 INFO  [PoolService-0] Value of FindClient_Select Button_pathType: ------->css 
-16-Jan-2019 12:36:35:811 INFO  [PoolService-0] Value of FindClient_Select Button_screenShot: ------->false 
-16-Jan-2019 12:36:35:811 INFO  [PoolService-0] Value of FindClient_Select Button_type: ------->Button 
-16-Jan-2019 12:36:36:031 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: [class*='AspNet-GridView-'] td ol li a] 
-16-Jan-2019 12:36:38:071 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:47:189 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:47:189 INFO  [PoolService-0] Clicked on button Select Button 
-16-Jan-2019 12:36:48:213 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/corporateclientdetails.aspx?partykey=19&code=ssptest 
-16-Jan-2019 12:36:48:327 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:49:060 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/corporateclientdetails.aspx?partykey=19&code=ssptest 
-16-Jan-2019 12:36:49:070 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:49:090 INFO  [PoolService-0] Successfully navigated to Corporate client Page 
-16-Jan-2019 12:36:49:090 INFO  [PoolService-0] Value of CorporateClient_Click Collection button_fieldLabel: ------->Click Collection button 
-16-Jan-2019 12:36:49:090 INFO  [PoolService-0] Value of CorporateClient_Click Collection button_id: ------->btnCollection 
-16-Jan-2019 12:36:49:090 INFO  [PoolService-0] Value of CorporateClient_Click Collection button_pathType: ------->css 
-16-Jan-2019 12:36:49:090 INFO  [PoolService-0] Value of CorporateClient_Click Collection button_screenShot: ------->false 
-16-Jan-2019 12:36:49:100 INFO  [PoolService-0] Value of CorporateClient_Click Collection button_type: ------->Button 
-16-Jan-2019 12:36:49:208 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_btnCollection] 
-16-Jan-2019 12:36:51:248 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:57:994 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:36:57:994 INFO  [PoolService-0] Clicked on button Click Collection button 
-16-Jan-2019 12:36:58:225 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/payment/collectionitem.aspx?accountcode=ssptest&redirectto=corporate&mode=cr 
-16-Jan-2019 12:36:58:225 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:58:405 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/payment/collectionitem.aspx?accountcode=ssptest&redirectto=corporate&mode=cr 
-16-Jan-2019 12:36:58:405 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:36:58:445 INFO  [PoolService-0] Successfully navigated to CollectionDetails Page 
-16-Jan-2019 12:36:58:445 INFO  [PoolService-0] Value of CollectionDetails_Select value from dropdown_fieldLabel: ------->Select value from dropdown 
-16-Jan-2019 12:36:58:445 INFO  [PoolService-0] Value of CollectionDetails_Select value from dropdown_id: ------->drpMediaType 
-16-Jan-2019 12:36:58:445 INFO  [PoolService-0] Value of CollectionDetails_Select value from dropdown_pathType: ------->css 
-16-Jan-2019 12:36:58:445 INFO  [PoolService-0] Value of CollectionDetails_Select value from dropdown_screenShot: ------->false 
-16-Jan-2019 12:36:58:445 INFO  [PoolService-0] Value of CollectionDetails_Select value from dropdown_type: ------->select 
-16-Jan-2019 12:36:58:685 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_PayNow_CollectionItem_GISLookup_MediaType] 
-16-Jan-2019 12:37:01:477 INFO  [PoolService-0] selected the dropdown Select value from dropdown option : Cheque 
-16-Jan-2019 12:37:01:478 INFO  [PoolService-0] Value of CollectionDetails_tabout from Media type field_fieldLabel: ------->tabout from Media type field 
-16-Jan-2019 12:37:01:478 INFO  [PoolService-0] Value of CollectionDetails_tabout from Media type field_id: ------->drpMediaType 
-16-Jan-2019 12:37:01:478 INFO  [PoolService-0] Value of CollectionDetails_tabout from Media type field_pathType: ------->css 
-16-Jan-2019 12:37:01:479 INFO  [PoolService-0] Value of CollectionDetails_tabout from Media type field_screenShot: ------->false 
-16-Jan-2019 12:37:01:479 INFO  [PoolService-0] Value of CollectionDetails_tabout from Media type field_type: ------->tabOut 
-16-Jan-2019 12:37:01:664 INFO  [PoolService-0] Value of CollectionDetails__fieldLabel: -------> 
-16-Jan-2019 12:37:01:665 INFO  [PoolService-0] Value of CollectionDetails__id: -------> 
-16-Jan-2019 12:37:01:665 INFO  [PoolService-0] Value of CollectionDetails__pathType: -------> 
-16-Jan-2019 12:37:01:665 INFO  [PoolService-0] Value of CollectionDetails__screenShot: ------->false 
-16-Jan-2019 12:37:01:665 INFO  [PoolService-0] Value of CollectionDetails__type: ------->selectSpinner 
-16-Jan-2019 12:37:03:726 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:03:726 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Media Reference field_fieldLabel: ------->Enter value in Media Reference field 
-16-Jan-2019 12:37:03:729 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Media Reference field_id: ------->fldMediaReference 
-16-Jan-2019 12:37:03:729 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Media Reference field_pathType: ------->css 
-16-Jan-2019 12:37:03:730 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Media Reference field_screenShot: ------->false 
-16-Jan-2019 12:37:03:730 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Media Reference field_type: ------->textfield 
-16-Jan-2019 12:37:03:940 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_PayNow_CollectionItem_txtMediaReference] 
-16-Jan-2019 12:37:04:291 INFO  [PoolService-0] Entered text inside Enter value in Media Reference field : Media Reference value 
-16-Jan-2019 12:37:04:293 INFO  [PoolService-0] Value of CollectionDetails_Enter future date_fieldLabel: ------->Enter future date 
-16-Jan-2019 12:37:04:293 INFO  [PoolService-0] Value of CollectionDetails_Enter future date_id: ------->fldTransactionDate 
-16-Jan-2019 12:37:04:293 INFO  [PoolService-0] Value of CollectionDetails_Enter future date_pathType: ------->css 
-16-Jan-2019 12:37:04:293 INFO  [PoolService-0] Value of CollectionDetails_Enter future date_screenShot: ------->false 
-16-Jan-2019 12:37:04:294 INFO  [PoolService-0] Value of CollectionDetails_Enter future date_type: ------->textfield 
-16-Jan-2019 12:37:04:425 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_PayNow_CollectionItem_Cash_List_Item__Transaction_Date] 
-16-Jan-2019 12:37:04:782 INFO  [PoolService-0] Entered text inside Enter future date : 25/12/2020 
-16-Jan-2019 12:37:04:783 INFO  [PoolService-0] Value of CollectionDetails_Select Bank from dropdown_fieldLabel: ------->Select Bank from dropdown 
-16-Jan-2019 12:37:04:783 INFO  [PoolService-0] Value of CollectionDetails_Select Bank from dropdown_id: ------->drpBank 
-16-Jan-2019 12:37:04:783 INFO  [PoolService-0] Value of CollectionDetails_Select Bank from dropdown_pathType: ------->css 
-16-Jan-2019 12:37:04:784 INFO  [PoolService-0] Value of CollectionDetails_Select Bank from dropdown_screenShot: ------->false 
-16-Jan-2019 12:37:04:784 INFO  [PoolService-0] Value of CollectionDetails_Select Bank from dropdown_type: ------->select 
-16-Jan-2019 12:37:04:974 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_PayNow_CollectionItem_CollectionItem_BankAccount] 
-16-Jan-2019 12:37:05:239 INFO  [PoolService-0] selected the dropdown Select Bank from dropdown option : Client Bank Account 
-16-Jan-2019 12:37:05:239 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Amount field_fieldLabel: ------->Enter value in Amount field 
-16-Jan-2019 12:37:05:239 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Amount field_id: ------->fldAmount 
-16-Jan-2019 12:37:05:243 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Amount field_pathType: ------->css 
-16-Jan-2019 12:37:05:243 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Amount field_screenShot: ------->false 
-16-Jan-2019 12:37:05:243 INFO  [PoolService-0] Value of CollectionDetails_Enter value in Amount field_type: ------->textfield 
-16-Jan-2019 12:37:05:348 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_PayNow_CollectionItem_txtAmount] 
-16-Jan-2019 12:37:05:464 INFO  [PoolService-0] Entered text inside Enter value in Amount field : 1000 
-16-Jan-2019 12:37:05:464 INFO  [PoolService-0] Value of CollectionDetails__fieldLabel: -------> 
-16-Jan-2019 12:37:05:464 INFO  [PoolService-0] Value of CollectionDetails__id: -------> 
-16-Jan-2019 12:37:05:465 INFO  [PoolService-0] Value of CollectionDetails__pathType: -------> 
-16-Jan-2019 12:37:05:465 INFO  [PoolService-0] Value of CollectionDetails__screenShot: ------->false 
-16-Jan-2019 12:37:05:465 INFO  [PoolService-0] Value of CollectionDetails__type: ------->selectSpinner 
-16-Jan-2019 12:37:07:524 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:07:524 INFO  [PoolService-0] Value of CollectionDetails_Click OK button_fieldLabel: ------->Click OK button 
-16-Jan-2019 12:37:07:525 INFO  [PoolService-0] Value of CollectionDetails_Click OK button_id: ------->btnOk 
-16-Jan-2019 12:37:07:526 INFO  [PoolService-0] Value of CollectionDetails_Click OK button_pathType: ------->css 
-16-Jan-2019 12:37:07:526 INFO  [PoolService-0] Value of CollectionDetails_Click OK button_screenShot: ------->false 
-16-Jan-2019 12:37:07:528 INFO  [PoolService-0] Value of CollectionDetails_Click OK button_type: ------->Button 
-16-Jan-2019 12:37:07:721 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_PayNow_CollectionItem_btnOk] 
-16-Jan-2019 12:37:09:766 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:16:869 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:16:869 INFO  [PoolService-0] Clicked on button Click OK button 
-16-Jan-2019 12:37:17:145 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/payment/collectionallocation.aspx?trandetailkey=3217&redirectto=corporate 
-16-Jan-2019 12:37:17:155 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:17:375 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/payment/collectionallocation.aspx?trandetailkey=3217&redirectto=corporate 
-16-Jan-2019 12:37:17:375 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:17:425 INFO  [PoolService-0] Successfully navigated to Allocation Page 
-16-Jan-2019 12:37:17:425 INFO  [PoolService-0] Value of Allocation_Receipt Reference_fieldLabel: ------->Receipt Reference 
-16-Jan-2019 12:37:17:425 INFO  [PoolService-0] Value of Allocation_Receipt Reference_id: ------->ReceiptRefAllocation 
-16-Jan-2019 12:37:17:435 INFO  [PoolService-0] Value of Allocation_Receipt Reference_pathType: ------->css 
-16-Jan-2019 12:37:17:435 INFO  [PoolService-0] Value of Allocation_Receipt Reference_screenShot: ------->false 
-16-Jan-2019 12:37:17:435 INFO  [PoolService-0] Value of Allocation_Receipt Reference_type: ------->getReceiptRefDynamicHashMap 
-16-Jan-2019 12:37:17:515 INFO  [PoolService-0] Value Displayed for Receipt Reference : ALLOCATION - SRP0000002638 
-16-Jan-2019 12:37:17:535 INFO  [PoolService-0] Value of Allocation_Click OK on Allocation screen_fieldLabel: ------->Click OK on Allocation screen 
-16-Jan-2019 12:37:17:535 INFO  [PoolService-0] Value of Allocation_Click OK on Allocation screen_id: ------->btnOkAllocation 
-16-Jan-2019 12:37:17:535 INFO  [PoolService-0] Value of Allocation_Click OK on Allocation screen_pathType: ------->css 
-16-Jan-2019 12:37:17:535 INFO  [PoolService-0] Value of Allocation_Click OK on Allocation screen_screenShot: ------->false 
-16-Jan-2019 12:37:17:536 INFO  [PoolService-0] Value of Allocation_Click OK on Allocation screen_type: ------->Button 
-16-Jan-2019 12:37:17:645 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_CollectionAllocation_btnOk] 
-16-Jan-2019 12:37:19:702 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:25:077 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:25:078 INFO  [PoolService-0] Clicked on button Click OK on Allocation screen 
-16-Jan-2019 12:37:25:912 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/corporateclientdetails.aspx?partykey=19&code=ssptest 
-16-Jan-2019 12:37:25:912 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:26:606 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/agent/corporateclientdetails.aspx?partykey=19&code=ssptest 
-16-Jan-2019 12:37:26:614 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:26:635 INFO  [PoolService-0] Successfully navigated to Corporate client Page 
-16-Jan-2019 12:37:26:635 INFO  [PoolService-0] Value of CorporateClient_Finance ribbon menu_fieldLabel: ------->Finance ribbon menu 
-16-Jan-2019 12:37:26:635 INFO  [PoolService-0] Value of CorporateClient_Finance ribbon menu_id: ------->lnkFinance 
-16-Jan-2019 12:37:26:635 INFO  [PoolService-0] Value of CorporateClient_Finance ribbon menu_pathType: ------->css 
-16-Jan-2019 12:37:26:635 INFO  [PoolService-0] Value of CorporateClient_Finance ribbon menu_screenShot: ------->false 
-16-Jan-2019 12:37:26:635 INFO  [PoolService-0] Value of CorporateClient_Finance ribbon menu_type: ------->Button 
-16-Jan-2019 12:37:26:825 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_RptCategorySpanText] 
-16-Jan-2019 12:37:28:875 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:31:096 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:31:096 INFO  [PoolService-0] Clicked on button Finance ribbon menu 
-16-Jan-2019 12:37:31:100 INFO  [PoolService-0] Value of CorporateClient_Click Reconciliation Link_fieldLabel: ------->Click Reconciliation Link 
-16-Jan-2019 12:37:31:100 INFO  [PoolService-0] Value of CorporateClient_Click Reconciliation Link_id: ------->lnkReconciliation 
-16-Jan-2019 12:37:31:101 INFO  [PoolService-0] Value of CorporateClient_Click Reconciliation Link_pathType: ------->css 
-16-Jan-2019 12:37:31:101 INFO  [PoolService-0] Value of CorporateClient_Click Reconciliation Link_screenShot: ------->false 
-16-Jan-2019 12:37:31:101 INFO  [PoolService-0] Value of CorporateClient_Click Reconciliation Link_type: ------->Button 
-16-Jan-2019 12:37:31:241 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl02_rptItem_ctl00_A1] 
-16-Jan-2019 12:37:33:295 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:38:076 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:38:076 INFO  [PoolService-0] Clicked on button Click Reconciliation Link 
-16-Jan-2019 12:37:38:312 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:37:38:312 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:38:508 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:37:38:508 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:38:558 INFO  [PoolService-0] Successfully navigated to BankReconciliation Page 
-16-Jan-2019 12:37:38:558 INFO  [PoolService-0] Value of BankReconciliation_Select Bank_fieldLabel: ------->Select Bank 
-16-Jan-2019 12:37:38:558 INFO  [PoolService-0] Value of BankReconciliation_Select Bank_id: ------->drpBank 
-16-Jan-2019 12:37:38:558 INFO  [PoolService-0] Value of BankReconciliation_Select Bank_pathType: ------->css 
-16-Jan-2019 12:37:38:558 INFO  [PoolService-0] Value of BankReconciliation_Select Bank_screenShot: ------->false 
-16-Jan-2019 12:37:38:558 INFO  [PoolService-0] Value of BankReconciliation_Select Bank_type: ------->select 
-16-Jan-2019 12:37:38:678 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_CollectionItem_BankAccount] 
-16-Jan-2019 12:37:38:743 INFO  [PoolService-0] selected the dropdown Select Bank option : Client Bank Account 
-16-Jan-2019 12:37:38:744 INFO  [PoolService-0] Value of BankReconciliation_Click Find_fieldLabel: ------->Click Find 
-16-Jan-2019 12:37:38:744 INFO  [PoolService-0] Value of BankReconciliation_Click Find_id: ------->btnFind 
-16-Jan-2019 12:37:38:744 INFO  [PoolService-0] Value of BankReconciliation_Click Find_pathType: ------->css 
-16-Jan-2019 12:37:38:744 INFO  [PoolService-0] Value of BankReconciliation_Click Find_screenShot: ------->false 
-16-Jan-2019 12:37:38:744 INFO  [PoolService-0] Value of BankReconciliation_Click Find_type: ------->Button 
-16-Jan-2019 12:37:38:852 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: #ctl00_cntMainBody_btnFind] 
-16-Jan-2019 12:37:40:899 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:45:593 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
-16-Jan-2019 12:37:45:593 INFO  [PoolService-0] Clicked on button Click Find 
-16-Jan-2019 12:37:45:598 INFO  [PoolService-0] Value of BankReconciliation_Verify all columns available on Bank Reconciliation screen_errorMessage: ------->all columns are not present in list 
-16-Jan-2019 12:37:45:598 INFO  [PoolService-0] Value of BankReconciliation_Verify all columns available on Bank Reconciliation screen_fieldLabel: ------->Verify all columns available on Bank Reconciliation screen 
-16-Jan-2019 12:37:45:598 INFO  [PoolService-0] Value of BankReconciliation_Verify all columns available on Bank Reconciliation screen_id: ------->allColumnsExceptSelectAllCheckboxColumn 
-16-Jan-2019 12:37:45:598 INFO  [PoolService-0] Value of BankReconciliation_Verify all columns available on Bank Reconciliation screen_pathType: ------->css 
-16-Jan-2019 12:37:45:598 INFO  [PoolService-0] Value of BankReconciliation_Verify all columns available on Bank Reconciliation screen_screenShot: ------->true 
-16-Jan-2019 12:37:45:599 INFO  [PoolService-0] Value of BankReconciliation_Verify all columns available on Bank Reconciliation screen_type: ------->assertOrderedListTextEquals 
-16-Jan-2019 12:37:45:599 INFO  [PoolService-0] Value of BankReconciliation_Verify all columns available on Bank Reconciliation screen_validMessage: ------->all columns are present in list 
-16-Jan-2019 12:37:45:698 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:45:823 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:46:073 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:46:263 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:46:423 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:46:603 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:46:800 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:47:065 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:47:265 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: th a] 
-16-Jan-2019 12:37:49:711 INFO  [PoolService-0] all columns are present in list 
-16-Jan-2019 12:37:49:711 INFO  [PoolService-0] <--------------------- Iteration 0 is ended -----------------------> 
-16-Jan-2019 12:37:49:718 INFO  [PoolService-0] Test Passed. 
-16-Jan-2019 12:37:49:718 INFO  [PoolService-0] ****             -E---N---D-             ***** 
-16-Jan-2019 12:37:49:720 INFO  [PoolService-0]  
-16-Jan-2019 12:37:49:720 INFO  [PoolService-0] ****             TC_3044_7732 [MMVP-Login]             ***** 
-16-Jan-2019 12:37:49:720 INFO  [PoolService-0]  
-16-Jan-2019 12:37:49:720 INFO  [PoolService-0]  
-16-Jan-2019 12:37:49:720 INFO  [PoolService-0] ****             To Validate the buttons available on bank reconciliation screen<small><b><i>[chrome_windows]</b></i></small>             ***** 
-16-Jan-2019 12:37:49:720 INFO  [PoolService-0]  
-16-Jan-2019 12:37:49:720 INFO  [PoolService-0] <--------------------- Iteration 0 is started -----------------------> 
-16-Jan-2019 12:37:49:830 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:37:49:830 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:49:917 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa02/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
-16-Jan-2019 12:37:49:917 DEBUG [PoolService-0] Page Load Wait: (Sync) 
-16-Jan-2019 12:37:49:936 INFO  [PoolService-0] Successfully navigated to BankReconciliation Page 
-16-Jan-2019 12:37:49:936 INFO  [PoolService-0] Value of BankReconciliation_Verify all buttons available on Bank Reconciliation screen_errorMessage: ------->all buttons are not present in list 
-16-Jan-2019 12:37:49:936 INFO  [PoolService-0] Value of BankReconciliation_Verify all buttons available on Bank Reconciliation screen_fieldLabel: ------->Verify all buttons available on Bank Reconciliation screen 
-16-Jan-2019 12:37:49:936 INFO  [PoolService-0] Value of BankReconciliation_Verify all buttons available on Bank Reconciliation screen_id: ------->btnAll 
-16-Jan-2019 12:37:49:937 INFO  [PoolService-0] Value of BankReconciliation_Verify all buttons available on Bank Reconciliation screen_pathType: ------->css 
-16-Jan-2019 12:37:49:937 INFO  [PoolService-0] Value of BankReconciliation_Verify all buttons available on Bank Reconciliation screen_screenShot: ------->true 
-16-Jan-2019 12:37:49:937 INFO  [PoolService-0] Value of BankReconciliation_Verify all buttons available on Bank Reconciliation screen_type: ------->assertOrderedListTextEquals 
-16-Jan-2019 12:37:49:937 INFO  [PoolService-0] Value of BankReconciliation_Verify all buttons available on Bank Reconciliation screen_validMessage: ------->all buttons are present in list 
-16-Jan-2019 12:37:50:021 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: a[id*='ctl00_cntMainBody_btn']] 
-16-Jan-2019 12:37:50:121 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: a[id*='ctl00_cntMainBody_btn']] 
-16-Jan-2019 12:37:50:221 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: a[id*='ctl00_cntMainBody_btn']] 
-16-Jan-2019 12:37:50:319 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: a[id*='ctl00_cntMainBody_btn']] 
-16-Jan-2019 12:37:50:489 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (5c0ab516d69f854bb31cc52efea8e675)] -> css selector: a[id*='ctl00_cntMainBody_btn']] 
-16-Jan-2019 12:37:52:827 INFO  [PoolService-0] all buttons are present in list 
-16-Jan-2019 12:37:52:827 INFO  [PoolService-0] <--------------------- Iteration 0 is ended -----------------------> 
-16-Jan-2019 12:37:52:899 INFO  [PoolService-0] Test Passed. 
-16-Jan-2019 12:37:52:899 INFO  [PoolService-0] ****             -E---N---D-             ***** 
+31-Jan-2019 11:52:48:217 INFO  [PoolService-0]  
+31-Jan-2019 11:52:48:224 INFO  [PoolService-0] ****             TC_7156_7792 [MMVP-Login]             ***** 
+31-Jan-2019 11:52:48:225 INFO  [PoolService-0]  
+31-Jan-2019 11:52:55:147 INFO  [PoolService-0]  
+31-Jan-2019 11:52:55:149 INFO  [PoolService-0] ****             This case is designed to test availability of Reconciliation Date on receipt view transaction screen through bank reconciliation screen<small><b><i>[chrome_windows]</b></i></small>             ***** 
+31-Jan-2019 11:52:55:150 INFO  [PoolService-0]  
+31-Jan-2019 11:52:55:152 INFO  [PoolService-0] <--------------------- Iteration 0 is started -----------------------> 
+31-Jan-2019 11:52:55:408 DEBUG [PoolService-0] Page URL:: https://vm-hland-qa01/purests/account/signin?returnurl=%2fpurests%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttp%253a%252f%252fvm-hland-qa01%252fpure.portal%252flogin.aspx%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252fpure.portal%25252flogin.aspx%26wct%3d2019-01-31t06%253a22%253a48z&wa=wsignin1.0&wtrealm=http%3a%2f%2fvm-hland-qa01%2fpure.portal%2flogin.aspx&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fpure.portal%252flogin.aspx&wct=2019-01-31t06%3a22%3a48z 
+31-Jan-2019 11:52:55:410 DEBUG [PoolService-0] Page Load Wait: (Sync) 
+31-Jan-2019 11:52:55:560 DEBUG [PoolService-0] Page URL:: https://vm-hland-qa01/purests/account/signin?returnurl=%2fpurests%2fissue%2fwsfed%3fwa%3dwsignin1.0%26wtrealm%3dhttp%253a%252f%252fvm-hland-qa01%252fpure.portal%252flogin.aspx%26wctx%3drm%253d0%2526id%253dpassive%2526ru%253d%25252fpure.portal%25252flogin.aspx%26wct%3d2019-01-31t06%253a22%253a48z&wa=wsignin1.0&wtrealm=http%3a%2f%2fvm-hland-qa01%2fpure.portal%2flogin.aspx&wctx=rm%3d0%26id%3dpassive%26ru%3d%252fpure.portal%252flogin.aspx&wct=2019-01-31t06%3a22%3a48z 
+31-Jan-2019 11:52:55:561 DEBUG [PoolService-0] Page Load Wait: (Sync) 
+31-Jan-2019 11:52:56:778 INFO  [PoolService-0] Navigated to Login page 
+31-Jan-2019 11:52:56:778 INFO  [PoolService-0] Value of LoginScreen_Username_fieldLabel: ------->Username 
+31-Jan-2019 11:52:56:786 INFO  [PoolService-0] Value of LoginScreen_Username_id: ------->fldUserName 
+31-Jan-2019 11:52:56:787 INFO  [PoolService-0] Value of LoginScreen_Username_inputType: ------->alphanumeric 
+31-Jan-2019 11:52:56:787 INFO  [PoolService-0] Value of LoginScreen_Username_length: ------->10 
+31-Jan-2019 11:52:56:787 INFO  [PoolService-0] Value of LoginScreen_Username_pathType: ------->css 
+31-Jan-2019 11:52:56:787 INFO  [PoolService-0] Value of LoginScreen_Username_screenShot: ------->false 
+31-Jan-2019 11:52:56:787 INFO  [PoolService-0] Value of LoginScreen_Username_type: ------->textfield 
+31-Jan-2019 11:52:57:010 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: input[id='UserName']] 
+31-Jan-2019 11:52:57:333 INFO  [PoolService-0] Entered text inside Username : sirius 
+31-Jan-2019 11:52:57:335 INFO  [PoolService-0] Value of LoginScreen_Password_fieldLabel: ------->Password 
+31-Jan-2019 11:52:57:336 INFO  [PoolService-0] Value of LoginScreen_Password_id: ------->fldPassword 
+31-Jan-2019 11:52:57:338 INFO  [PoolService-0] Value of LoginScreen_Password_inputType: ------->alphanumeric 
+31-Jan-2019 11:52:57:340 INFO  [PoolService-0] Value of LoginScreen_Password_length: ------->10 
+31-Jan-2019 11:52:57:342 INFO  [PoolService-0] Value of LoginScreen_Password_pathType: ------->css 
+31-Jan-2019 11:52:57:343 INFO  [PoolService-0] Value of LoginScreen_Password_screenShot: ------->true 
+31-Jan-2019 11:52:57:345 INFO  [PoolService-0] Value of LoginScreen_Password_type: ------->textfield 
+31-Jan-2019 11:52:57:494 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: input#usrpwd] 
+31-Jan-2019 11:52:58:169 INFO  [PoolService-0] Entered text inside Password : sirius 
+31-Jan-2019 11:52:58:170 INFO  [PoolService-0] Value of LoginScreen_SignIn_fieldLabel: ------->SignIn 
+31-Jan-2019 11:52:58:170 INFO  [PoolService-0] Value of LoginScreen_SignIn_id: ------->btnSignIn 
+31-Jan-2019 11:52:58:171 INFO  [PoolService-0] Value of LoginScreen_SignIn_pathType: ------->css 
+31-Jan-2019 11:52:58:172 INFO  [PoolService-0] Value of LoginScreen_SignIn_screenShot: ------->false 
+31-Jan-2019 11:52:58:173 INFO  [PoolService-0] Value of LoginScreen_SignIn_type: ------->buttonJS 
+31-Jan-2019 11:52:58:287 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: [value='Sign In']] 
+31-Jan-2019 11:53:08:260 INFO  [PoolService-0] Click button is performed for SignIn 
+31-Jan-2019 11:53:08:444 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa01/pure.portal/secure/agent/findclient.aspx 
+31-Jan-2019 11:53:08:446 DEBUG [PoolService-0] Page Load Wait: (Sync) 
+31-Jan-2019 11:53:08:645 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa01/pure.portal/secure/agent/findclient.aspx 
+31-Jan-2019 11:53:08:645 DEBUG [PoolService-0] Page Load Wait: (Sync) 
+31-Jan-2019 11:53:08:661 INFO  [PoolService-0] Successfully navigated to Client/Policy Search Page 
+31-Jan-2019 11:53:08:661 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_fieldLabel: ------->Finance Ribbon Menu 
+31-Jan-2019 11:53:08:661 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_id: ------->lnkFinance 
+31-Jan-2019 11:53:08:661 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_pathType: ------->css 
+31-Jan-2019 11:53:08:661 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_screenShot: ------->false 
+31-Jan-2019 11:53:08:661 INFO  [PoolService-0] Value of Home_Finance Ribbon Menu_type: ------->Button 
+31-Jan-2019 11:53:08:864 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_RptCategorySpanText] 
+31-Jan-2019 11:53:10:944 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:13:173 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:13:188 INFO  [PoolService-0] Clicked on button Finance Ribbon Menu 
+31-Jan-2019 11:53:13:189 INFO  [PoolService-0] Value of Home_Click on Reconciliation link_fieldLabel: ------->Click on Reconciliation link 
+31-Jan-2019 11:53:13:190 INFO  [PoolService-0] Value of Home_Click on Reconciliation link_id: ------->lnkReconciliation 
+31-Jan-2019 11:53:13:190 INFO  [PoolService-0] Value of Home_Click on Reconciliation link_pathType: ------->css 
+31-Jan-2019 11:53:13:190 INFO  [PoolService-0] Value of Home_Click on Reconciliation link_screenShot: ------->false 
+31-Jan-2019 11:53:13:190 INFO  [PoolService-0] Value of Home_Click on Reconciliation link_type: ------->Button 
+31-Jan-2019 11:53:13:331 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: #ctl00_RibbonMenu_rptCategory_ctl04_rptSection_ctl02_rptItem_ctl00_A1] 
+31-Jan-2019 11:53:15:399 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:19:333 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:19:333 INFO  [PoolService-0] Clicked on button Click on Reconciliation link 
+31-Jan-2019 11:53:19:587 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa01/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
+31-Jan-2019 11:53:19:587 DEBUG [PoolService-0] Page Load Wait: (Sync) 
+31-Jan-2019 11:53:19:837 DEBUG [PoolService-0] Page URL:: http://vm-hland-qa01/pure.portal/secure/bankreconciliation.aspx?postback=ribbonmenu 
+31-Jan-2019 11:53:19:837 DEBUG [PoolService-0] Page Load Wait: (Sync) 
+31-Jan-2019 11:53:19:899 INFO  [PoolService-0] Successfully navigated to BankReconciliation Page 
+31-Jan-2019 11:53:19:899 INFO  [PoolService-0] Value of BankReconciliation_Click Find_fieldLabel: ------->Click Find 
+31-Jan-2019 11:53:19:899 INFO  [PoolService-0] Value of BankReconciliation_Click Find_id: ------->btnFind 
+31-Jan-2019 11:53:19:899 INFO  [PoolService-0] Value of BankReconciliation_Click Find_pathType: ------->css 
+31-Jan-2019 11:53:19:899 INFO  [PoolService-0] Value of BankReconciliation_Click Find_screenShot: ------->false 
+31-Jan-2019 11:53:19:899 INFO  [PoolService-0] Value of BankReconciliation_Click Find_type: ------->Button 
+31-Jan-2019 11:53:20:046 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: #ctl00_cntMainBody_btnFind] 
+31-Jan-2019 11:53:22:109 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:25:874 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:25:874 INFO  [PoolService-0] Clicked on button Click Find 
+31-Jan-2019 11:53:25:876 INFO  [PoolService-0] Value of BankReconciliation_Click elipsis button_fieldLabel: ------->Click elipsis button 
+31-Jan-2019 11:53:25:876 INFO  [PoolService-0] Value of BankReconciliation_Click elipsis button_id: ------->actionMenu 
+31-Jan-2019 11:53:25:877 INFO  [PoolService-0] Value of BankReconciliation_Click elipsis button_pathType: ------->css 
+31-Jan-2019 11:53:25:877 INFO  [PoolService-0] Value of BankReconciliation_Click elipsis button_screenShot: ------->false 
+31-Jan-2019 11:53:25:877 INFO  [PoolService-0] Value of BankReconciliation_Click elipsis button_type: ------->Button 
+31-Jan-2019 11:53:25:987 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: a[title='Action Menu']] 
+31-Jan-2019 11:53:28:060 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:30:282 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:30:298 INFO  [PoolService-0] Clicked on button Click elipsis button 
+31-Jan-2019 11:53:30:298 INFO  [PoolService-0] Value of BankReconciliation_Click view link_fieldLabel: ------->Click view link 
+31-Jan-2019 11:53:30:299 INFO  [PoolService-0] Value of BankReconciliation_Click view link_id: ------->lnkView 
+31-Jan-2019 11:53:30:299 INFO  [PoolService-0] Value of BankReconciliation_Click view link_pathType: ------->css 
+31-Jan-2019 11:53:30:299 INFO  [PoolService-0] Value of BankReconciliation_Click view link_screenShot: ------->false 
+31-Jan-2019 11:53:30:299 INFO  [PoolService-0] Value of BankReconciliation_Click view link_type: ------->Button 
+31-Jan-2019 11:53:30:462 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: #ctl00_cntMainBody_grdDetails_ctl02_liView a] 
+31-Jan-2019 11:53:32:539 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:40:096 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:40:096 INFO  [PoolService-0] Clicked on button Click view link 
+31-Jan-2019 11:53:40:097 INFO  [PoolService-0] Value of BankReconciliation_switch  Iframe_fieldLabel: ------->switch  Iframe 
+31-Jan-2019 11:53:40:098 INFO  [PoolService-0] Value of BankReconciliation_switch  Iframe_id: ------->iframeIn 
+31-Jan-2019 11:53:40:099 INFO  [PoolService-0] Value of BankReconciliation_switch  Iframe_pathType: ------->css 
+31-Jan-2019 11:53:40:099 INFO  [PoolService-0] Value of BankReconciliation_switch  Iframe_screenShot: ------->false 
+31-Jan-2019 11:53:40:099 INFO  [PoolService-0] Value of BankReconciliation_switch  Iframe_type: ------->switchIframe 
+31-Jan-2019 11:53:40:183 INFO  [PoolService-0] Value of BankReconciliation_Click Details tab_fieldLabel: ------->Click Details tab 
+31-Jan-2019 11:53:40:183 INFO  [PoolService-0] Value of BankReconciliation_Click Details tab_id: ------->tabDetails 
+31-Jan-2019 11:53:40:183 INFO  [PoolService-0] Value of BankReconciliation_Click Details tab_pathType: ------->css 
+31-Jan-2019 11:53:40:187 INFO  [PoolService-0] Value of BankReconciliation_Click Details tab_screenShot: ------->false 
+31-Jan-2019 11:53:40:187 INFO  [PoolService-0] Value of BankReconciliation_Click Details tab_type: ------->Button 
+31-Jan-2019 11:53:40:327 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: a[href='#tabdetails']] 
+31-Jan-2019 11:53:42:383 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:44:823 DEBUG [PoolService-0] Spinner Load Wait: (Sync) 
+31-Jan-2019 11:53:44:823 INFO  [PoolService-0] Clicked on button Click Details tab 
+31-Jan-2019 11:53:44:824 INFO  [PoolService-0] Value of BankReconciliation_Availability of Reconciliation Date field_errorMessage: ------->Reconciliation Date field is not present 
+31-Jan-2019 11:53:44:826 INFO  [PoolService-0] Value of BankReconciliation_Availability of Reconciliation Date field_fieldLabel: ------->Availability of Reconciliation Date field 
+31-Jan-2019 11:53:44:826 INFO  [PoolService-0] Value of BankReconciliation_Availability of Reconciliation Date field_id: ------->fldReconciliationDateOnCTV 
+31-Jan-2019 11:53:44:826 INFO  [PoolService-0] Value of BankReconciliation_Availability of Reconciliation Date field_pathType: ------->css 
+31-Jan-2019 11:53:44:826 INFO  [PoolService-0] Value of BankReconciliation_Availability of Reconciliation Date field_screenShot: ------->false 
+31-Jan-2019 11:53:44:826 INFO  [PoolService-0] Value of BankReconciliation_Availability of Reconciliation Date field_type: ------->assertGetText 
+31-Jan-2019 11:53:44:826 INFO  [PoolService-0] Value of BankReconciliation_Availability of Reconciliation Date field_validMessage: ------->Reconciliation Date field is present 
+31-Jan-2019 11:53:45:060 DEBUG [PoolService-0] Element is displayed:: [[RemoteWebDriver: chrome on XP (e03dc01350c084a65c69556aa82e0037)] -> css selector: #ctl00_cntMainBody_lblReconciledDate] 
+31-Jan-2019 11:53:45:122 INFO  [PoolService-0] Reconciliation Date field is present 
+31-Jan-2019 11:53:45:122 INFO  [PoolService-0] <--------------------- Iteration 0 is ended -----------------------> 
+31-Jan-2019 11:53:45:122 INFO  [PoolService-0] Test Passed. 
+31-Jan-2019 11:53:45:122 INFO  [PoolService-0] ****             -E---N---D-             ***** 
