@@ -114,7 +114,7 @@ public class US_7156 extends BaseTest {
 		}
 	}
 	
-	@Test(description = "This case is designed to test that system persist marked items after pressing clear button", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
+	@Test(description = "This case is designed to test that system persist marked items after pressing clear button", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7156_7778_04",alwaysRun = true)
 	public void TC_7156_7779(String browser) throws Exception {
 		String tcId = new Object() {
 		}.getClass().getEnclosingMethod().getName();
@@ -134,7 +134,7 @@ public class US_7156 extends BaseTest {
 			Log.endTestCase(extentedReport);
 		}
 	}
-	@Test(description = "This case is designed to test the value of unreconciled, marked items and closing balance  then user press OK button without reconciled", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
+	@Test(description = "This case is designed to test the value of unreconciled, marked items and closing balance  then user press OK button without reconciled", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7156_7779",alwaysRun = true)
 	public void TC_7156_7783(String browser) throws Exception {
 		String tcId = new Object() {
 		}.getClass().getEnclosingMethod().getName();
@@ -155,7 +155,7 @@ public class US_7156 extends BaseTest {
 		}
 	}
 	
-	@Test(description = "This case is designed to test functionality of Reconcile button", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
+	@Test(description = "This case is designed to test functionality of Reconcile button", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7156_7783",alwaysRun = true)
 	public void TC_7156_7789(String browser) throws Exception {
 		String tcId = new Object() {
 		}.getClass().getEnclosingMethod().getName();
@@ -176,7 +176,7 @@ public class US_7156 extends BaseTest {
 		}
 	}
 	
-	@Test(description = "This case is designed to test availability of Reconciliation Date on receipt view transaction screen through bank reconciliation screen", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
+	@Test(description = "This case is designed to test availability of Reconciliation Date on receipt view transaction screen through bank reconciliation screen", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7156_7789",alwaysRun = true)
 	public void TC_7156_7792(String browser) throws Exception {
 		String tcId = new Object() {
 		}.getClass().getEnclosingMethod().getName();
