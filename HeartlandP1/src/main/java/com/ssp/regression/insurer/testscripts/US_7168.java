@@ -30,8 +30,8 @@ public class US_7168 extends BaseTest {
 		mode = context.getCurrentXmlTest().getParameter("mode");
 	}
 
-	@Test(description = "This case is designed to test value of Unreconciled field ", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
-	public void TC_7156_7778_01(String browser) throws Exception {
+	@Test(description = "This case is designed to test value of Reconciled Date on CTV screen", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
+	public void TC_7168_8652_01(String browser) throws Exception {
 		String tcId = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		driver = WebDriverFactory.get(browser);
@@ -51,8 +51,8 @@ public class US_7168 extends BaseTest {
 		}
 	}
 
-	@Test(description = "This case is designed to test default value of Opening Balance field ", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7156_7778_01")
-	public void TC_7156_7778_02(String browser) throws Exception {
+	@Test(description = "This case is designed to test availability of Reconciled Date column when search only for Bank Account", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7168_8652_01")
+	public void TC_7168_8652_02(String browser) throws Exception {
 		String tcId = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		
@@ -72,8 +72,9 @@ public class US_7168 extends BaseTest {
 		}
 	}
 	
-	@Test(description = "This case is designed to test default value of Total Marked field ", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7156_7778_02")
-	public void TC_7156_7778_03(String browser) throws Exception {
+
+	@Test(description = "This case is designed to test that Reconciled Date column will not be available when search through account code", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7168_8652_02")
+	public void TC_7168_8652_03(String browser) throws Exception {
 		String tcId = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		
@@ -92,111 +93,6 @@ public class US_7168 extends BaseTest {
 			Log.endTestCase(extentedReport);
 		}
 	}
-	
-	@Test(description = "This case is designed to test value of Closing Balance field", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider",dependsOnMethods="TC_7156_7778_03")
-	public void TC_7156_7778_04(String browser) throws Exception {
-		String tcId = new Object() {
-		}.getClass().getEnclosingMethod().getName();
-		
-		GetTestData testDataConfig = new GetTestData(featureId, tcId);
-		ExtentTest extentedReport = addTestInfo(tcId, testDataConfig.description);
-		try {
-			
-			// The below step is to do the test case execution after creating
-			// the policy
-			testCaseSteps(driver, tcId, browser, mode, testDataConfig, extentedReport);
-		} catch (Exception e) {
-			Log.exception(e, driver, extentedReport);
-		} finally {
-
-			Log.testCaseResult(extentedReport);
-			Log.endTestCase(extentedReport);
-		}
-	}
-	
-	@Test(description = "This case is designed to test that system persist marked items after pressing clear button", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
-	public void TC_7156_7779(String browser) throws Exception {
-		String tcId = new Object() {
-		}.getClass().getEnclosingMethod().getName();
-		driver = WebDriverFactory.get(browser);
-		GetTestData testDataConfig = new GetTestData(featureId, tcId);
-		ExtentTest extentedReport = addTestInfo(tcId, testDataConfig.description);
-		try {
-			driver.get(webSite);
-			// The below step is to do the test case execution after creating
-			// the policy
-			testCaseSteps(driver, tcId, browser, mode, testDataConfig, extentedReport);
-		} catch (Exception e) {
-			Log.exception(e, driver, extentedReport);
-		} finally {
-
-			Log.testCaseResult(extentedReport);
-			Log.endTestCase(extentedReport);
-		}
-	}
-	@Test(description = "This case is designed to test the value of unreconciled, marked items and closing balance  then user press OK button without reconciled", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
-	public void TC_7156_7783(String browser) throws Exception {
-		String tcId = new Object() {
-		}.getClass().getEnclosingMethod().getName();
-		driver = WebDriverFactory.get(browser);
-		GetTestData testDataConfig = new GetTestData(featureId, tcId);
-		ExtentTest extentedReport = addTestInfo(tcId, testDataConfig.description);
-		try {
-			driver.get(webSite);
-			// The below step is to do the test case execution after creating
-			// the policy
-			testCaseSteps(driver, tcId, browser, mode, testDataConfig, extentedReport);
-		} catch (Exception e) {
-			Log.exception(e, driver, extentedReport);
-		} finally {
-
-			Log.testCaseResult(extentedReport);
-			Log.endTestCase(extentedReport);
-		}
-	}
-	
-	@Test(description = "This case is designed to test functionality of Reconcile button", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
-	public void TC_7156_7789(String browser) throws Exception {
-		String tcId = new Object() {
-		}.getClass().getEnclosingMethod().getName();
-		driver = WebDriverFactory.get(browser);
-		GetTestData testDataConfig = new GetTestData(featureId, tcId);
-		ExtentTest extentedReport = addTestInfo(tcId, testDataConfig.description);
-		try {
-			driver.get(webSite);
-			// The below step is to do the test case execution after creating
-			// the policy
-			testCaseSteps(driver, tcId, browser, mode, testDataConfig, extentedReport);
-		} catch (Exception e) {
-			Log.exception(e, driver, extentedReport);
-		} finally {
-
-			Log.testCaseResult(extentedReport);
-			Log.endTestCase(extentedReport);
-		}
-	}
-	
-	@Test(description = "This case is designed to test availability of Reconciliation Date on receipt view transaction screen through bank reconciliation screen", dataProviderClass = DataProviderUtils.class, dataProvider = "ssBVTDataProvider")
-	public void TC_7156_7792(String browser) throws Exception {
-		String tcId = new Object() {
-		}.getClass().getEnclosingMethod().getName();
-		driver = WebDriverFactory.get(browser);
-		GetTestData testDataConfig = new GetTestData(featureId, tcId);
-		ExtentTest extentedReport = addTestInfo(tcId, testDataConfig.description);
-		try {
-			driver.get(webSite);
-			// The below step is to do the test case execution after creating
-			// the policy
-			testCaseSteps(driver, tcId, browser, mode, testDataConfig, extentedReport);
-		} catch (Exception e) {
-			Log.exception(e, driver, extentedReport);
-		} finally {
-
-			Log.testCaseResult(extentedReport);
-			Log.endTestCase(extentedReport);
-		}
-	}
-	
 	@AfterClass
 	public void closeBrowser() {
 		if (driver != null)

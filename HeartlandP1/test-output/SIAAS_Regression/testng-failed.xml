@@ -14,15 +14,17 @@
   <parameter name="securityTest" value="false"/>
   <test name="MMVP-Login(failed)" parallel="methods">
     <classes>
-      <class name="com.ssp.regression.insurer.testscripts.US_7156">
+      <class name="com.ssp.regression.insurer.testscripts.US_7168">
         <methods>
-          <include name="TC_7156_7792" invocation-numbers="0"/>
+          <include name="TC_7168_8652_01"/>
           <include name="afterSuite"/>
           <include name="beforeSuite"/>
-          <include name="closeBrowser"/>
           <include name="init"/>
+          <include name="TC_7168_8652_03" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="TC_7168_8652_02"/>
         </methods>
-      </class> <!-- com.ssp.regression.insurer.testscripts.US_7156 -->
+      </class> <!-- com.ssp.regression.insurer.testscripts.US_7168 -->
     </classes>
   </test> <!-- MMVP-Login(failed) -->
 </suite> <!-- Failed suite [SIAAS_Regression] -->

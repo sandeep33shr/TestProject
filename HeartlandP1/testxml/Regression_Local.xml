@@ -18,11 +18,11 @@
 		value="http://vm-hland-qa01/Pure.Portal/Login.aspx"></parameter>
 	<test name="MMVP-Login" parallel="methods" thread-count="1">
 		<classes>
-			<class name="com.ssp.regression.insurer.testscripts.US_7156">
+			<class name="com.ssp.regression.insurer.testscripts.US_7168">
 				<methods>
 			
-				<include name ="TC_7156_7792"/>
-				    <!--   <include name ="TC_7156_7778_04"/>  -->
+			  <!--	<include name ="TC_7156_7792"/>
+				     <include name ="TC_7156_7778_04"/>  -->
 		         	
 				</methods>
 			</class>

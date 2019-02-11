@@ -2502,7 +2502,17 @@
 		</Field>
 		<Field id="tabDetails" path="a[href='#tabdetails']">
 		</Field>
-		<Field id="fldReconciliationDateOnCTV" path="#ctl00_cntMainBody_lblReconciledDate">
+		<Field id="lblReconciliationDateOnCTV" path="#ctl00_cntMainBody_lblReconciledDate">
+		</Field>
+		<Field id="fldReconciliationDateOnCTV" path="#ctl00_cntMainBody_txtReconciledDate">
+		</Field>
+		<Field id="Account3rdRow" path="#ctl00_cntMainBody_grdDetails tr:nth-child(2) td:nth-child(4)">
+		</Field>
+		<Field id="btnCloseInViewTransaction"
+			path="#ctl00_cntMainBody_btnClose">
+		</Field>
+		<Field id="fldBankAccount"
+			path="#ctl00_cntMainBody_txtBankAccount">
 		</Field>
 	</Screen>
 </Selenium>

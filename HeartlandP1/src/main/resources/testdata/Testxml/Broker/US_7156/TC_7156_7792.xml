@@ -46,7 +46,7 @@
 		<Field id="tabDetails" type="Button" fieldLabel="Click Details tab"
 			pathType="css" screenShot="false">
 		</Field>
-			<Field id="fldReconciliationDateOnCTV" type="assertGetText"
+			<Field id="lblReconciliationDateOnCTV" type="assertGetText"
 			fieldLabel="Availability of Reconciliation Date field" pathType="css"
 			screenShot="false" validMessage="Reconciliation Date field is present on CTV screen"
 			errorMessage="Reconciliation Date field is not present on CTV screen">

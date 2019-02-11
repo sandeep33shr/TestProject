@@ -335,7 +335,11 @@ public class ActionKeyword {
 			verifyCurrentDate(fieldLabel, pathType, path, attribute, input, validMessage, errorMessage, driver,
 					extentedReport, screenshot);
 			break;
-
+		case "verifyCurrentDateDisabledField":
+			verifyCurrentDateDisabledField(fieldLabel, pathType, path, attribute, input, validMessage, errorMessage, driver,
+					extentedReport, screenshot);
+			break;
+			
 		case "verifyStringContainIgnoreCase":
 			getTextContainIgnoreCase(fieldLabel, pathType, path, input, validMessage, errorMessage, driver,
 					extentedReport, screenshot);
@@ -2463,7 +2467,37 @@ public class ActionKeyword {
 			throw new Exception("No Element Found to assert" + e);
 		}
 	}
+	public static void verifyCurrentDateDisabledField(String fieldLabel, String pathType, String path, String attribute,
+			String input, String validMessage, String errorMessage, WebDriver driver, ExtentTest extentedReport,
+			boolean screenshot) throws Exception {
+		try {
 
+			// Create object of SimpleDateFormat class and decide the format
+			DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy ");
+
+			// get current date time with Date()
+			Date date = new Date();
+
+			// Now format the date
+			String date1 = dateFormat.format(date);
+
+			boolean status = false;
+			By locator;
+			locator = ActionKeyword.locatorValue(pathType, path);
+			WebElement element = driver.findElement(locator);
+			WaitUtils.waitForElement(driver, element);
+			if (element.getAttribute("value").equals(date1.trim())) {
+				status = true;
+			}
+
+			Log.softAssertThat(status, validMessage, "Fail to achieve expected result : " + errorMessage, driver,
+					extentedReport, screenshot);
+
+		} catch (NoSuchElementException e) {
+			Log.fail("Fail to achieve expected result : " + errorMessage, driver, extentedReport, true);
+			throw new Exception("No Element Found to assert" + e);
+		}
+	}
 	/**
 	 * To compare web service response with UI value displayed
 	 * 
