@@ -520,50 +520,7 @@ public class ActionKeyword {
 		}
 	}
 
-	/*private static void assertValueInGrid(String fieldLabel, String pathType, String path, String input,
-			String validMessage, String errorMessage, WebDriver driver, ExtentTest extentedReport,
-			Boolean screenshot) throws Exception {
-		try {
-		  boolean status = false;
-			
-			String[] nameToVerify = input.split(",");
-			int i=-1;
-			By pagesLocator, TransactionRowsLocator;
-			
-			
-			String[] paths = path.split(",");
-			
-			pagesLocator = ActionKeyword.locatorValue(pathType, paths[0]);
-			List<WebElement> pages;
-			TransactionRowsLocator = ActionKeyword.locatorValue(pathType, paths[1]);
-			List<WebElement> transactionRows = driver.findElements(TransactionRowsLocator);
-			
-			
-				transactionRows = driver.findElements(TransactionRowsLocator);
-				pages = driver.findElements(pagesLocator);
-				do {
-					i++;
-					
-					transactionRows = driver.findElements(TransactionRowsLocator);
-					if (transactionRows.get(i).getText().equalsIgnoreCase(nameToVerify[i]))
-				    {
-
-					status= true;
-				}
-				pages = driver.findElements(pagesLocator);
-				if (i != pages.size())
-					pages.get(i).click();
-				}while (i < pages.size());
-				
-			} catch (NoSuchElementException e) {
-				Log.fail("Fail to achieve expected result : " + errorMessage, driver, extentedReport, true);
-				throw new Exception("No Element Found to assert" + e);
-			}
-		
-			
-			       	
-	}
-*/
+	
 	private static void OpeningBalanceAmountDynamicHashMapBeforeReconciled(String fieldLabel, String pathType,
 			String path, String input, WebDriver driver, Boolean screenshot) {
 		boolean status = false;
